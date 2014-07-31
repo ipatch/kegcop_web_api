@@ -6,6 +6,9 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+- The Ruby version running on the server is ruby 2.0.0p353
+- The Web Server running on the server is Apache, Apache/2.2.16
+- The plugin for Apache is modrails / Phusion Passenger, Phusion Passenger version 4.0.26
 
 * System dependencies
 
