@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KegCop</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'favicon.ico' %>
+  <%= render 'layouts/ie_shim' %>
+  
+  
+</head>
+<body>
+<div class="wrapper">
+  <%= render 'layouts/nav' %>
+
+    <%= yield %>
+
+    <%= render 'layouts/bubbles' %>
+
+    <%= render 'layouts/footer' %>
+  
+
+<%= render 'layouts/google_analytics' %>
+<%= render 'layouts/beer_background' %>
+<%= audio_tag("/audios/bottle-open.ogg", autoplay: true, controls: false) %>
+</div>
+
+</body>
+
+</html>
