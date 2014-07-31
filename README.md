@@ -13,6 +13,27 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
+- After cloning the repo w/ git, run "bundle install"
+
+- If one tries to run this application after cloning, the first error presented in a web browser should be,"Missing `secret_key_base` for 'development' environment,"
+
+- to prevent the above mentioned error from happening run the following command in the app root
+- $ rake secret
+
+- create a secrets.yml file
+- $ touch config/secrets.yml
+
+- see this SO thread, for formatting of secrets.yml stackoverflow.com/questions/21136363
+
+- paste the secret token into config/secrets.yml
+
+- create config/environments/development.rb
+- $ touch config/environments/development.rb
+
+- Add the appropriate lines for the development.rb file for a rails 4.1.x app
+
+- next create a database.yml file
+- copy or touch, whichever you prefer.
 
 * Database creation
 
