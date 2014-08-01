@@ -29,8 +29,8 @@ root*<br />
 ## Database creation
 
 ##  Database initialization
-- After a DB has been created with the appropiate privledges, run the following command
--      rake db:migrate RAILS_ENV=development 
+- After a DB has been created with the appropiate privledges, run the following command,<br />
+<code>rake db:migrate RAILS_ENV=development</code>
 
 ##  How to run the test suite
 
