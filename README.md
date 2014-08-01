@@ -17,7 +17,7 @@ This README contains steps necessary to get the [application](http://kegcop.chri
 root*<br />
 4. <code>rake secret</code><br />
 *Note: create a secrets.yml file*<br />
-5. <code>touch config/secrets.yml<br />
+5. <code>touch config/secrets.yml</code><br />
 *Note: see this SO thread, for formatting of secrets.yml stackoverflow.com/questions/21136363*
 6. paste the secret token into config/secrets.yml
 7. create config/environments/development.rb
