@@ -20,7 +20,7 @@ root*<br />
 5. <code>touch config/secrets.yml</code><br />
 *Note: see [this SO thread](stackoverflow.com/questions/21136363/) for formatting of secrets.yml*
 6. paste the secret token into config/secrets.yml
-7. create config/environments/development.rb
+7. create config/environments/development.rb<br />
 <code>touch config/environments/development.rb</code>
 8. Add the appropriate lines for the *development.rb* file for a rails 4.1.x app
 9. next create a *database.yml* file<br />
