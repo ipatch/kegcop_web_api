@@ -18,7 +18,7 @@ root*<br />
 4. <code>rake secret</code><br />
 *Note: create a secrets.yml file*<br />
 5. <code>touch config/secrets.yml</code><br />
-*Note: see this SO thread, for formatting of secrets.yml stackoverflow.com/questions/21136363*
+*Note: see [this SO thread](stackoverflow.com/questions/21136363/) for formatting of secrets.yml*
 6. paste the secret token into config/secrets.yml
 7. create config/environments/development.rb
 -     touch config/environments/development.rb
