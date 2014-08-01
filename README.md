@@ -11,13 +11,13 @@ This README contains steps necessary to get the [application](http://kegcop.chri
 ##  Configuration / Setup
 - Fork the repo.
 - Clone the repo.<br />
-*Note: If one tries to run this application after cloning, the first error presented in a web browser should be,"Missing `secret_key_base` for 'development' environment,"*
--     bundle install
+*Note: If one tries to run this application after cloning, the first error presented in a web browser should be,"Missing secret_key_base for 'development' environment,"*
+-     bundle install<br />
 *Note: To prevent the above mentioned error from happening run the following command in the app
 root*
--     rake secret
+-     rake secret<br />
 *Note: create a secrets.yml file*
--     touch config/secrets.yml
+-     touch config/secrets.yml<br />
 *Note: see this SO thread, for formatting of secrets.yml stackoverflow.com/questions/21136363*
 - paste the secret token into config/secrets.yml
 - create config/environments/development.rb
