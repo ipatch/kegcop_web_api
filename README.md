@@ -2,15 +2,17 @@
 
 This README contains steps necessary to get the [application](http://kegcop.chrisrjones.com/) up and running.
 
-* Ruby version
-- The Ruby version running on the server is ruby 2.0.0p353
-- The Web Server running on the server is Apache, Apache/2.2.16
-- The plugin for Apache is modrails / Phusion Passenger, Phusion Passenger version 4.0.26
+## Server Specs
+- Ruby 2.0.0p353
+- Apache/2.2.16
+- Phusion Passenger version 4.0.26
 
-* System dependencies
+##  System dependencies
 
-* Configuration
-- After cloning the repo w/ git, run "bundle install"
+##  Configuration / Setup
+- Fork the repo.
+- Clone the repo.
+-     bundle install
 
 - If one tries to run this application after cloning, the first error presented in a web browser should be,"Missing `secret_key_base` for 'development' environment,"
 
