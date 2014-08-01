@@ -11,7 +11,7 @@ This README contains steps necessary to get the [application](http://kegcop.chri
 ##  Configuration / Setup
 1.  Fork the repo.
 2.  Clone the repo.<br />
-*Note: If one tries to run this application after cloning, the first error presented in a web browser should be,"Missing secret_key_base for 'development' environment,"*<br />
+**Note: If one tries to run this application after cloning, the first error presented in a web browser should be,"Missing secret_key_base for 'development' environment,"**<br />
 3.<code>bundle install</code><br />
 *Note: To prevent the above mentioned error from happening run the following command in the app
 root*<br />
