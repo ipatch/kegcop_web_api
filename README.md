@@ -31,9 +31,3 @@ root*<br />
 ##  Database initialization
 - After a DB has been created with the appropiate privledges, run the following command,<br />
 <code>rake db:migrate RAILS_ENV=development</code>
-
-##  How to run the test suite
-
-##  Services (job queues, cache servers, search engines, etc.)
-
-## Deployment instructions
