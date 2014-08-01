@@ -9,21 +9,21 @@ This README contains steps necessary to get the [application](http://kegcop.chri
 ##  System dependencies
 
 ##  Configuration / Setup
-- Fork the repo.
-- Clone the repo.<br />
+1.  Fork the repo.
+2.  Clone the repo.<br />
 *Note: If one tries to run this application after cloning, the first error presented in a web browser should be,"Missing secret_key_base for 'development' environment,"*
--     bundle install<br />
+3.    bundle install<br />
 *Note: To prevent the above mentioned error from happening run the following command in the app
 root*
--     rake secret<br />
+4.    rake secret<br />
 *Note: create a secrets.yml file*
--     touch config/secrets.yml<br />
+5.    touch config/secrets.yml<br />
 *Note: see this SO thread, for formatting of secrets.yml stackoverflow.com/questions/21136363*
-- paste the secret token into config/secrets.yml
-- create config/environments/development.rb
+6. paste the secret token into config/secrets.yml
+7. create config/environments/development.rb
 -     touch config/environments/development.rb
-- Add the appropriate lines for the *development.rb* file for a rails 4.1.x app
-- next create a *database.yml* file
+8. Add the appropriate lines for the *development.rb* file for a rails 4.1.x app
+9. next create a *database.yml* file
 *Note: copy or touch, whichever you prefer.*
 
 ## Database creation
