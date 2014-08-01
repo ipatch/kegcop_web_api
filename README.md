@@ -1,6 +1,6 @@
 # README - KegCop-Web
 
-This README contains steps that are necessary to get the application up and running.
+This README contains steps necessary to get the [application](http://kegcop.chrisrjones.com/) up and running.
 
 * Ruby version
 - The Ruby version running on the server is ruby 2.0.0p353
