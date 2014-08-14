@@ -59,4 +59,5 @@ doc/app
 scratchpad
 ._scratchpad
 
-
+# Ignore deleted files in Sublime text
+.Trash-1000
