@@ -33,6 +33,7 @@ config/initializers/secret_token.rb
 config/secrets.yml
 config/database.yml
 config/environments/development.rb
+config/environments/production.rb
 
 # Environment normalization:
 /.bundle
@@ -58,6 +59,8 @@ doc/app
 # Ignore my scratchpad files
 scratchpad
 ._scratchpad
+scratchpad.txt
+._scratchpad.txt
 
 # Ignore deleted files in Sublime text
 .Trash-1000
