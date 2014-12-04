@@ -38,9 +38,25 @@ Rails.application.routes.draw do
   # get 'users/new'
 
   # the below line specifies JSON as the default API format
-  namespace :api, defaults: {format: 'json'} do
-    namespace :v1 do
-      resources :users
+
+  # comment the below block so it doesn't conflict with ios on rails tut
+
+  # namespace :api, defaults: {format: 'json'} do
+  #   namespace :v1 do
+  #     resources :users
+  #   end
+  # end
+
+
+  # add the below route to complete ios on rails tutorial
+  # kegcop-web::Application.routes.draw do
+    scope module: :api, defaults: { format: 'json' } do
+      namespace :v1 do ## resources will be here
+        namespace :events do
+          resources :nearests, only: [:index]
+        end
+        
+        resources :events, only: [:create, :show, :update]
     end
   end
 

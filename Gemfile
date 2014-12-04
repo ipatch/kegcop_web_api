@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.1.8'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -26,7 +25,7 @@ gem 'jquery-rails'
 # gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.2.4'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
@@ -51,8 +50,10 @@ gem 'bcrypt', '~> 3.1.7'
 # Include a JS Runtime environment to prevent erroneous errors
 gem 'therubyracer'
 
+# NOTE: the below gem is no longer needed because this project has
+# 		switched to Postgres
 # Use the MySQL2 gem
-gem 'mysql2'
+# gem 'mysql2'
 
 # a gem that brings up HTTP status code
 gem 'cheat'
@@ -60,7 +61,7 @@ gem 'cheat'
 # add twitter-bootstrap-rails to project,
 # https://github.com/seyhunak/twitter-bootstrap-rails
 gem 'less-rails'
-gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'twitter-bootstrap-rails', '~> 3.2.0'
 
 # add support for the JavaScript library D3
 # gem 'd3-rails', :git => 'git://github.com/iblue/d3-rails.git'
@@ -70,3 +71,24 @@ gem 'active_attr', :git => 'git://github.com/cgriego/active_attr.git'
 
 # add support for the JavaScript library D3
 gem 'd3_rails', :git => 'git://github.com/logical42/d3_rails.git'
+
+# gems needed / required to complete the ios on rails tutorial
+
+gem 'factory_girl', '~> 4.5.0'
+gem 'rspec', '~> 3.1.0'
+gem 'shoulda-matchers', '~> 2.7.0'
+gem 'oj', '~> 2.10.4'
+gem 'geocoder', '~> 1.2.5'
+
+# gems required to add the helios framework.
+
+# see the below gh thread
+# https://github.com/helios-framework/helios/issues/11#issuecomment-16136334
+
+gem 'excon'
+gem 'sprockets'
+gem 'helios'
+gem 'pg'
+
+gem 'tilt', '~> 1.3.4'
+gem 'rack-test', '~> 0.6.2'

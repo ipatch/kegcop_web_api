@@ -33,11 +33,13 @@ body {
     border-color: #252525;
 }
 
-
+.navbar navbar-default {
+	background-color: #ff0000;
+}
 
 /* the below line didn't change anything */
 .navbar {
-	/*color: #ff0000;*/
+	color: #ff0000;
 }
 
 /* change color of links in navbar */
@@ -220,18 +222,24 @@ input:focus {
 
 	/* navbar */
 	.navbar {
-		background-color: #f6e6cc;
-    	border-color: #E7E7E7;
+	
 	}
 
 	/* title */
 	.navbar-default .navbar-brand {
-    	color: #ff0000;
+    
+    }
+
+    .navbar-inverse .navbar-brand {
+    	
+    	color: #d3a459;
+
+    }
 
 
 	.navbar-default {
-    	background-color: #f6e6cc;
-    	border-color: #E7E7E7;
+    	/*background-color: #f6e6cc;
+    	border-color: #E7E7E7;*/
 	}
 
 	.navbar-custom {
@@ -240,7 +248,7 @@ input:focus {
 	}
 
 	.navbar-fixed-top {
-		background-color: #ff0000;
+		/*background-color: #ff0000;*/
 	}
 
 	.navbar-inner {
@@ -249,8 +257,8 @@ input:focus {
 	}
 
 	.navbar-inverse {
-		background-color: #ff0000;
-    	border-color: #E7E7E7;
+		/*background-color: #ff0000;*/
+    	/*border-color: #E7E7E7;*/
 	}
 
 	.container {
@@ -265,10 +273,29 @@ input:focus {
     }
 
     .navbar .nav > li > a {
-    	color:  #ff0000;
+    	/*color:  #ff0000;*/
     }
-}
 
+    /* Sticky footer styles
+    ----------------------------------------------------*/
+    html {
+    	position: relative;
+    	min-height: 100%;
+    }
+
+    body {
+    	/* Margin bottom by footer height */
+    	margin-bottom 60px;
+    }
+
+    .footer {
+    	position: absolute;
+    	bottom: 0;
+    	width: 100%;
+    	/* Set the fixed height of the footer here */
+    	height: 60px;
+    	background-color: #251300;
+    }
 
 }
 @media(min-width:992px){
@@ -277,10 +304,6 @@ input:focus {
 		font-size:5em;
 		color: #d7af72;
 		}
-
-
-
-
 }
 @media(min-width:1200px){
 
@@ -288,8 +311,4 @@ input:focus {
 		font-size:5em;
 		color: #d7af72;
 		}
-
-
-
-
 }
