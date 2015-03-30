@@ -1,22 +1,21 @@
 GIT
   remote: git://github.com/cgriego/active_attr.git
-  revision: e70224340380e18067e0dd544dc11135b29f0ebe
+  revision: 4f037cbb6b350060f0f9a2e79e305056981796ad
   specs:
-    active_attr (0.8.4)
-      activemodel (>= 3.0.2, < 4.2)
-      activesupport (>= 3.0.2, < 4.2)
+    active_attr (0.8.5)
+      activemodel (>= 3.0.2, < 5.0)
+      activesupport (>= 3.0.2, < 5.0)
 
 GIT
   remote: git://github.com/logical42/d3_rails.git
-  revision: 5ed91698990304e3d5bd5279dffb2ced21a66901
+  revision: 3ede92da16fc0612b4e8cf19461b4d429b0d1ab9
   specs:
-    d3_rails (3.4.13)
+    d3_rails (3.5.3)
       railties (>= 3.1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    CFPropertyList (2.2.8)
     actionmailer (4.1.8)
       actionpack (= 4.1.8)
       actionview (= 4.1.8)
@@ -44,12 +43,10 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
-    backports (3.6.4)
     bcrypt (3.1.9)
     builder (3.2.2)
     cheat (1.3.3)
       pager (~> 1.0)
-    chunky_png (1.3.3)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -57,127 +54,22 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
-    commander (4.2.1)
-      highline (~> 1.6.11)
     commonjs (0.2.7)
-    compass (0.12.7)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.2.19)
-    core_data (0.1.1)
-      nokogiri (~> 1.4)
     diff-lcs (1.2.5)
-    dotenv (1.0.2)
     erubis (2.7.0)
-    excon (0.41.0)
     execjs (2.2.2)
     factory_girl (4.5.0)
       activesupport (>= 3.0.0)
-    fission (0.5.0)
-      CFPropertyList (~> 2.2)
-    fog (1.25.0)
-      fog-brightbox (~> 0.4)
-      fog-core (~> 1.25)
-      fog-json
-      fog-profitbricks
-      fog-radosgw (>= 0.0.2)
-      fog-sakuracloud (>= 0.0.4)
-      fog-softlayer
-      fog-terremark
-      fog-vmfusion
-      fog-voxel
-      fog-xml (~> 0.1.1)
-      ipaddress (~> 0.5)
-      nokogiri (~> 1.5, >= 1.5.11)
-      opennebula
-    fog-brightbox (0.7.0)
-      fog-core (~> 1.22)
-      fog-json
-      inflecto (~> 0.0.2)
-    fog-core (1.25.0)
-      builder
-      excon (~> 0.38)
-      formatador (~> 0.2)
-      mime-types
-      net-scp (~> 1.1)
-      net-ssh (>= 2.1.3)
-    fog-json (1.0.0)
-      multi_json (~> 1.0)
-    fog-profitbricks (0.0.1)
-      fog-core
-      fog-xml
-      nokogiri
-    fog-radosgw (0.0.3)
-      fog-core (>= 1.21.0)
-      fog-json
-      fog-xml (>= 0.0.1)
-    fog-sakuracloud (0.1.1)
-      fog-core
-      fog-json
-    fog-softlayer (0.3.24)
-      fog-core
-      fog-json
-    fog-terremark (0.0.3)
-      fog-core
-      fog-xml
-    fog-vmfusion (0.0.1)
-      fission
-      fog-core
-    fog-voxel (0.0.1)
-      fog-core
-      fog-xml
-    fog-xml (0.1.1)
-      fog-core
-      nokogiri (~> 1.5, >= 1.5.11)
-    foreman (0.76.0)
-      dotenv (~> 1.0.2)
-      thor (~> 0.19.1)
-    formatador (0.2.5)
-    fssm (0.2.10)
     geocoder (1.2.6)
-    haml (4.0.5)
-      tilt
-    helios (0.4.1)
-      coffee-script (~> 2.2)
-      commander (~> 4.1)
-      compass (~> 0.12)
-      core_data (~> 0.1)
-      fog (~> 1.10)
-      foreman (~> 0.63)
-      haml (>= 3.1)
-      houston (~> 2.2)
-      json (~> 1.7)
-      pg (~> 0.17)
-      rack-contrib (~> 1.1)
-      rack-in-app-purchase (~> 0.1)
-      rack-newsstand (~> 0.1)
-      rack-passbook (~> 0.1)
-      rack-push-notification (~> 0.4)
-      rack-scaffold (~> 0.2)
-      rails-database-url (~> 1.0)
-      sinatra (~> 1.3)
-      sinatra-assetpack (= 0.2.3)
-      sinatra-backbone (~> 0.1.1)
-      sinatra-contrib (~> 1.3)
-      sinatra-param (~> 0.1)
-      sinatra-support (~> 1.2)
-      zurb-foundation (= 4.1.2)
-    highline (1.6.21)
     hike (1.2.3)
-    houston (2.2.1)
-      commander (~> 4.1)
-      json
-    i18n (0.6.11)
-    inflecto (0.0.2)
-    ipaddress (0.8.0)
-    jbuilder (2.2.5)
+    i18n (0.7.0)
+    jbuilder (2.2.6)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.2)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
-    jsmin (1.0.1)
-    json (1.8.1)
+    json (1.8.2)
     less (2.6.0)
       commonjs (~> 0.2.7)
     less-rails (2.6.0)
@@ -187,56 +79,13 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
-    mini_portile (0.6.1)
-    minitest (5.4.3)
+    minitest (5.5.1)
     multi_json (1.10.1)
-    net-scp (1.2.1)
-      net-ssh (>= 2.6.5)
-    net-ssh (2.9.1)
-    nokogiri (1.6.5)
-      mini_portile (~> 0.6.0)
     oj (2.10.4)
-    opennebula (4.10.1)
-      json
-      nokogiri
-      rbvmomi
     pager (1.0.1)
-    pg (0.17.1)
-    plist (3.1.0)
+    pg (0.18.1)
     rack (1.5.2)
-    rack-contrib (1.2.0)
-      rack (>= 0.9.1)
-    rack-in-app-purchase (0.1.1)
-      rack (~> 1.4)
-      sequel (~> 3.37)
-      sinatra (~> 1.3)
-      venice
-    rack-newsstand (0.1.2)
-      builder (>= 3.0)
-      plist (~> 3.1)
-      rack (~> 1.4)
-      sequel (~> 3.37)
-      sinatra (~> 1.3)
-    rack-passbook (0.2.0)
-      rack (~> 1.4)
-      sequel (~> 3.37)
-      sinatra (~> 1.3)
-    rack-protection (1.5.3)
-      rack
-    rack-push-notification (0.5.1)
-      rack (~> 1.4)
-      rack-contrib (~> 1.1)
-      sequel (>= 3.0)
-      sinatra (~> 1.3)
-      sinatra-param (~> 0.1)
-    rack-scaffold (0.2.0)
-      activesupport (>= 3.0)
-      rack (~> 1.4)
-      rack-contrib (~> 1.1)
-      sinatra (~> 1.4)
-      sinatra-contrib (~> 1.4)
-      sinatra-param (~> 0.1)
-    rack-test (0.6.2)
+    rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.1.8)
       actionmailer (= 4.1.8)
@@ -248,19 +97,13 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.1.8)
       sprockets-rails (~> 2.0)
-    rails-database-url (1.0.0)
     railties (4.1.8)
       actionpack (= 4.1.8)
       activesupport (= 4.1.8)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.4.0)
-    rbvmomi (1.8.2)
-      builder
-      nokogiri (>= 1.4.1)
-      trollop
-    rdoc (4.1.2)
-      json (~> 1.4)
+    rake (10.4.2)
+    rdoc (4.2.0)
     ref (1.0.5)
     rspec (3.1.0)
       rspec-core (~> 3.1.0)
@@ -283,32 +126,8 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    sequel (3.48.0)
     shoulda-matchers (2.7.0)
       activesupport (>= 3.0.0)
-    sinatra (1.4.5)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
-    sinatra-assetpack (0.2.3)
-      backports
-      jsmin
-      rack-test
-      sinatra
-      tilt (>= 1.3.0)
-    sinatra-backbone (0.1.1)
-      sinatra
-    sinatra-contrib (1.4.2)
-      backports (>= 2.0)
-      multi_json
-      rack-protection
-      rack-test
-      sinatra (~> 1.4.0)
-      tilt (~> 1.3)
-    sinatra-param (0.1.3)
-      sinatra (~> 1.3)
-    sinatra-support (1.2.2)
-      sinatra (>= 1.0)
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -319,14 +138,12 @@ GEM
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.10)
-    terminal-table (1.4.5)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
     thor (0.19.1)
     thread_safe (0.3.4)
-    tilt (1.3.7)
-    trollop (2.0)
+    tilt (1.4.1)
     twitter-bootstrap-rails (3.2.0)
       actionpack (~> 4.1)
       execjs (~> 2.2)
@@ -334,15 +151,9 @@ GEM
       railties (~> 4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.5.3)
+    uglifier (2.7.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    venice (0.2.0)
-      commander (~> 4.1)
-      json
-      terminal-table (~> 1.4)
-    zurb-foundation (4.1.2)
-      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
@@ -353,24 +164,19 @@ DEPENDENCIES
   cheat
   coffee-rails (~> 4.0.0)
   d3_rails!
-  excon
   factory_girl (~> 4.5.0)
   geocoder (~> 1.2.5)
-  helios
   jbuilder (~> 2.2.4)
   jquery-rails
   less-rails
   oj (~> 2.10.4)
   pg
-  rack-test (~> 0.6.2)
   rails (= 4.1.8)
   rspec (~> 3.1.0)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   shoulda-matchers (~> 2.7.0)
-  sprockets
   sqlite3
   therubyracer
-  tilt (~> 1.3.4)
   twitter-bootstrap-rails (~> 3.2.0)
   uglifier (>= 1.3.0)

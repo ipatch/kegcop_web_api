@@ -20,8 +20,8 @@ module Kegcop
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
-    config.middleware.use Helios::Application do
-        service :data, model: 'Accounts.xcdatamodel'
-    end
+#    config.middleware.use Helios::Application do
+        #service :data, model: 'Accounts.xcdatamodel'
+#    end
   end
 end

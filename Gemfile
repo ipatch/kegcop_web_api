@@ -85,10 +85,10 @@ gem 'geocoder', '~> 1.2.5'
 # see the below gh thread
 # https://github.com/helios-framework/helios/issues/11#issuecomment-16136334
 
-gem 'excon'
-gem 'sprockets'
-gem 'helios'
+#gem 'excon'
+#gem 'sprockets'
+#gem 'helios'
 gem 'pg'
 
-gem 'tilt', '~> 1.3.4'
-gem 'rack-test', '~> 0.6.2'
+#gem 'tilt', '~> 1.3.4'
+#gem 'rack-test', '~> 0.6.2'
