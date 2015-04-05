@@ -86,12 +86,8 @@ gem 'geocoder', '~> 1.2.5'
 # gems required to add the helios framework.
 
 # see the below gh thread
-# https://github.com/helios-framework/helios/issues/11#issuecomment-16136334
-
-#gem 'excon'
-#gem 'sprockets'
-#gem 'helios'
+gem 'helios'
 gem 'pg'
+gem 'doten'
 
-#gem 'tilt', '~> 1.3.4'
-#gem 'rack-test', '~> 0.6.2'
+
