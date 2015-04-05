@@ -65,3 +65,8 @@ scratchpad.txt
 
 # Ignore deleted files in Sublime text
 .Trash-1000
+
+# Add Gemfile.lock - was giving me issues.
+# see this SO thread for more info,
+# http://stackoverflow.com/questions/4151495/
+Gemfile.lock
