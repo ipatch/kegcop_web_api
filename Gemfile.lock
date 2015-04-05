@@ -1,6 +1,10 @@
 GIT
   remote: git://github.com/cgriego/active_attr.git
+<<<<<<< HEAD
   revision: 98871d69707a9fecdddccf17a5dd0b9e6d5d71e7
+=======
+  revision: 4f037cbb6b350060f0f9a2e79e305056981796ad
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
   specs:
     active_attr (0.8.5)
       activemodel (>= 3.0.2, < 5.0)
@@ -8,19 +12,31 @@ GIT
 
 GIT
   remote: git://github.com/logical42/d3_rails.git
+<<<<<<< HEAD
   revision: 32871d9a8d7155f419ed6f1f7e3fbc8f0315bb7f
   specs:
     d3_rails (3.5.5)
+=======
+  revision: 3ede92da16fc0612b4e8cf19461b4d429b0d1ab9
+  specs:
+    d3_rails (3.5.3)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
       railties (>= 3.1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
+<<<<<<< HEAD
     CFPropertyList (2.3.1)
     actionmailer (4.2.1)
       actionpack (= 4.2.1)
       actionview (= 4.2.1)
       activejob (= 4.2.1)
+=======
+    actionmailer (4.1.8)
+      actionpack (= 4.1.8)
+      actionview (= 4.1.8)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
       mail (~> 2.5, >= 2.5.4)
       rails-dom-testing (~> 1.0, >= 1.0.5)
     actionpack (4.2.1)
@@ -52,6 +68,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+<<<<<<< HEAD
     arel (6.0.0)
     backports (3.6.4)
     bcrypt (3.1.10)
@@ -59,24 +76,30 @@ GEM
     cheat (1.3.3)
       pager (~> 1.0)
     chunky_png (1.3.4)
+=======
+    arel (5.0.1.20140414130214)
+    bcrypt (3.1.9)
+    builder (3.2.2)
+    cheat (1.3.3)
+      pager (~> 1.0)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
     coffee-script (2.3.0)
       coffee-script-source
       execjs
+<<<<<<< HEAD
     coffee-script-source (1.9.1)
     commander (4.3.2)
       highline (~> 1.7.1)
+=======
+    coffee-script-source (1.8.0)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
     commonjs (0.2.7)
-    compass (0.12.7)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.2.19)
-    core_data (0.1.1)
-      nokogiri (~> 1.4)
     diff-lcs (1.2.5)
     erubis (2.7.0)
+<<<<<<< HEAD
     excon (0.45.1)
     execjs (2.4.0)
     factory_girl (4.5.0)
@@ -214,13 +237,25 @@ GEM
     inflecto (0.0.2)
     ipaddress (0.8.0)
     jbuilder (2.2.12)
+=======
+    execjs (2.2.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    geocoder (1.2.6)
+    hike (1.2.3)
+    i18n (0.7.0)
+    jbuilder (2.2.6)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (4.0.3)
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+<<<<<<< HEAD
     jsmin (1.0.1)
+=======
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
     json (1.8.2)
     less (2.6.0)
       commonjs (~> 0.2.7)
@@ -233,6 +268,7 @@ GEM
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
     mime-types (2.4.3)
+<<<<<<< HEAD
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.11.0)
@@ -278,6 +314,14 @@ GEM
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
       sinatra-param (~> 0.1)
+=======
+    minitest (5.5.1)
+    multi_json (1.10.1)
+    oj (2.10.4)
+    pager (1.0.1)
+    pg (0.18.1)
+    rack (1.5.2)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -289,6 +333,7 @@ GEM
       activerecord (= 4.2.1)
       activesupport (= 4.2.1)
       bundler (>= 1.3.0, < 2.0)
+<<<<<<< HEAD
       railties (= 4.2.1)
       sprockets-rails
     rails-database-url (1.0.0)
@@ -303,11 +348,21 @@ GEM
     railties (4.2.1)
       actionpack (= 4.2.1)
       activesupport (= 4.2.1)
+=======
+      railties (= 4.1.8)
+      sprockets-rails (~> 2.0)
+    railties (4.1.8)
+      actionpack (= 4.1.8)
+      activesupport (= 4.1.8)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
     rdoc (4.2.0)
+<<<<<<< HEAD
       json (~> 1.4)
+=======
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
     ref (1.0.5)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
@@ -332,9 +387,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    sequel (3.48.0)
     shoulda-matchers (2.7.0)
       activesupport (>= 3.0.0)
+<<<<<<< HEAD
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -358,6 +413,8 @@ GEM
       sinatra (~> 1.3)
     sinatra-support (1.2.2)
       sinatra (>= 1.0)
+=======
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
     sprockets (2.12.3)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -368,13 +425,17 @@ GEM
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
     sqlite3 (1.3.10)
-    terminal-table (1.4.5)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
     thor (0.19.1)
+<<<<<<< HEAD
     thread_safe (0.3.5)
     tilt (1.3.7)
+=======
+    thread_safe (0.3.4)
+    tilt (1.4.1)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
     twitter-bootstrap-rails (3.2.0)
       actionpack (~> 4.1)
       execjs (~> 2.2)
@@ -382,15 +443,13 @@ GEM
       railties (~> 4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+<<<<<<< HEAD
     uglifier (2.7.1)
+=======
+    uglifier (2.7.0)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    venice (0.2.0)
-      commander (~> 4.1)
-      json
-      terminal-table (~> 1.4)
-    zurb-foundation (4.1.2)
-      sass (>= 3.2.0)
 
 PLATFORMS
   ruby
@@ -401,25 +460,25 @@ DEPENDENCIES
   cheat
   coffee-rails (~> 4.0.0)
   d3_rails!
-  excon
   factory_girl (~> 4.5.0)
   geocoder (~> 1.2.5)
-  helios
   jbuilder (~> 2.2.4)
   jquery-rails
   less-rails
   oj (~> 2.10.4)
   pg
+<<<<<<< HEAD
   rack-test (~> 0.6.2)
   rails (= 4.2.1)
   responders
+=======
+  rails (= 4.1.8)
+>>>>>>> 48d4cbd386be8cc6664dd4b9a819118164f7c9ef
   rspec (~> 3.1.0)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   shoulda-matchers (~> 2.7.0)
-  sprockets
   sqlite3
   therubyracer
-  tilt (~> 1.3.4)
   twitter-bootstrap-rails (~> 3.2.0)
   uglifier (>= 1.3.0)
