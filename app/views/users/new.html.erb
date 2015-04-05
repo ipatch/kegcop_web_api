@@ -25,10 +25,32 @@
      <!-- <%= f.label :password_confirmation %>--><br />
     <%= f.password_field :password_confirmation, :class => 'input-xlarge', placeholder: 'Password confirm' %>
   </div>
-  <div class="actions"><%= f.submit "Sign Up", class: 'btn btn-xlarge btn-custom'%></div>
+  <div class="actions"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"><%= f.submit "Sign Up", class: "btn btn-primary"%></button></div>
 <% end %>
 
-<div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+<!-- <div id="modal-window" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div> -->
 
+<!-- button trigger modal -->
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"> -->
+  <!-- Launch demo modal -->
+<!-- </button> -->
 
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"<span aria-hidden="true">&times;</span><span class="sr-only">Close</span><button>
+          <h4 class="modal-title" id="myModalLabel">Terms of Service</h4>
+        </div>
+        <div class="modal-body">
+          <%= render 'layouts/tos' %>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">No thanks.</button>
+          <button type="button" class="btn btn-primary">Agree.</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
