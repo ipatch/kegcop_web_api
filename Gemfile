@@ -88,6 +88,6 @@ gem 'geocoder', '~> 1.2.5'
 # see the below gh thread
 gem 'helios'
 gem 'pg'
-gem 'doten'
+gem 'dotenv'
 
 
