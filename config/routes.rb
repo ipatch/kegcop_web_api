@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   #   # end
   # end
   namespace :api do
-    resources :accounts
+    namespace :v1 do
+      resources :accounts
+    end
   end
 
   # the below generated route is not necessary
