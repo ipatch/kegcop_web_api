@@ -61,6 +61,9 @@ group :test do
 	gem 'ffaker'
 end
 
+gem 'puma'
+
+
 gem 'geocoder', '~> 1.2.5'
 # gems required to add the helios framework.
 #gem 'helios'

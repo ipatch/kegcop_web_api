@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   #     # We are going to list our resources here
   #   # end
   # end
-  namespace :api do
+  namespace :api, :constraints => {:subdomain => "api"} do
     namespace :v1 do
       resources :accounts
     end
