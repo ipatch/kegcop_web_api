@@ -2,8 +2,9 @@ Rails.application.routes.draw do
   # API definition
   namespace :api, defaults: { format: :json },
                               constraints: { subdomain: 'api' }, path: '/' do
-    #list out resources here
-
+    scope module: :v1 do
+      #list out resources here
+    end
   end
 
   # the below generated route is not necessary
