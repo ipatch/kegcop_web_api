@@ -26,6 +26,9 @@ gem 'jbuilder', '~> 2.2.4'
 # gem for parsing JSON
 gem 'oj', '~> 2.10.4'
 
+#Api gems
+gem 'active_model_serializers'
+
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
