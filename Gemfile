@@ -61,7 +61,7 @@ group :test do
 	gem 'ffaker'
 end
 
-gem 'puma'
+gem 'puma', group: :production
 
 
 gem 'geocoder', '~> 1.2.5'
