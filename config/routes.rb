@@ -2,13 +2,6 @@ require 'api_constraints'
 
 Rails.application.routes.draw do
  # Api definition
-  # namespace :api, defaults: { format: :json },
-  #                             constraints: { subdomain: 'api' }, path: '/'  do
-  #   # scope module: :v1,
-  #             # constraints: ApiConstraints.new(version: 1, default: true) do
-  #     # We are going to list our resources here
-  #   # end
-  # end
   namespace :api, path: "", defaults: {format: 'json'}, constraints: {subdomain: 'api'} do
     # use scpoe to remove the version number from the API when making a request
     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
@@ -16,12 +9,6 @@ Rails.application.routes.draw do
       resources :accounts
     end
   end
-
-  # the below generated route is not necessary
-  # get 'sessions/new'
-
-  # delete user route
-  #get 'delete' => 'users#delete'
 
   # shortened routes, per railscast comment
   get 'signup' => 'users#new'
