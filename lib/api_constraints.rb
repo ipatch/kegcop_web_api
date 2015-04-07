@@ -9,6 +9,8 @@ class ApiConstraints
 
   def matches?(req)
   	# vnd.marketplace. <= is not going to work :'(
-    @default || req.headers['Accept'].include?("application/vnd.api.kegcop.chrisrjones.v#{@version}")
+    # @default || req.headers['Accept'].include?("application/vnd.api.kegcop.chrisrjones.v#{@version}")
+  	return true
+
   end
 end
