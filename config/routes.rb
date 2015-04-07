@@ -1,3 +1,5 @@
+require 'api_constraints'
+
 Rails.application.routes.draw do
  # Api definition
   # namespace :api, defaults: { format: :json },
@@ -7,8 +9,10 @@ Rails.application.routes.draw do
   #     # We are going to list our resources here
   #   # end
   # end
-  namespace :api, :path => "", :defaults => {:format => :json}, :constraints => {:subdomain => "api"} do
-    namespace :v1 do
+  namespace :api, path: "", defaults: {format: 'json'}, constraints: {subdomain: 'api'} do
+    # use scpoe to remove the version number from the API when making a request
+    scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+    # namespace :v1 do
       resources :accounts
     end
   end
