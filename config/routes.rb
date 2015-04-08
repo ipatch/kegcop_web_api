@@ -1,11 +1,11 @@
-# require 'api_constraints'
+require 'api_constraints'
 
 Rails.application.routes.draw do
  # Api definition
   namespace :api, defaults: {format: 'json'} do
     # use scpoe to remove the version number from the API when making a request
-    # scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
-    namespace :v1 do
+    scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
+    # namespace :v1 do
       resources :accounts
       resources :please_work
     end
