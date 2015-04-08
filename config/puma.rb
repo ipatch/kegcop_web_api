@@ -5,6 +5,7 @@
 # The default is the current directory.
 #
 # directory '/u/apps/lolcat'
+directory '/opt/rails/kegcop'
 
 # Use an object or block as the rack application. This allows the
 # config file to be the application itself.
