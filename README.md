@@ -2,9 +2,10 @@
 This README contains steps necessary to get the [application](http://kegcop.chrisrjones.com/) up and running.
 
 ## Server Specs
-- Ruby 2.0.0p353
-- Apache/2.2.16
-- Phusion Passenger version 4.0.26
+- Ruby 2.1.5p273
+- Apache/2.2.22
+- ~~Phusion Passenger version 4.0.26~~
+- Puma 2.11.1
 
 ##  System dependencies
 
