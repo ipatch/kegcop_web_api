@@ -53,7 +53,7 @@ state_path '/opt/rails/kegcop/tmp/pids/puma.state'
 # ("append") specifies whether the output is appended, the default is
 # "false".
 #
-stdout_redirect '/opt/rails/kegcop/tmp/log/stdout', '/opt/rails/kegcop/log/stderr'
+stdout_redirect '/opt/rails/kegcop/tmp/log/stdout', '/opt/rails/kegcop/tmp/log/stderr'
 # stdout_redirect '/u/apps/lolcat/log/stdout', '/u/apps/lolcat/log/stderr', true
 
 # Disable request logging.
