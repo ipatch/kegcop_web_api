@@ -73,3 +73,8 @@ Gemfile.lock
 
 # Add local environment variables file to .gitignore
 config/local_env.yml
+
+# Ignore the sass-cache, see below SO thread
+# http://stackoverflow.com/questions/20430291
+.sass-cache
+.sass-cache/*

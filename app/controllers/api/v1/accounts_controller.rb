@@ -1,10 +1,10 @@
 class API::V1::AccountsController < ApplicationController
 
 	# http_basic_authenticate_with name: "foo", password: "bar"
-	# before_filter :restrict_access
+	before_filter :restrict_access
 
 	def index
-		@accounts = Account.all # model names are singular :P
+		@accounts = Account.all # model names are singular
 		respond_to do |format|
 			format.json { render :json => @accounts }
 		end
