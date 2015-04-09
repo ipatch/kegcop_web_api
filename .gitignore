@@ -78,3 +78,6 @@ config/local_env.yml
 # http://stackoverflow.com/questions/20430291
 .sass-cache
 .sass-cache/*
+
+# Ignore the compiled assets
+/public/assets/*
