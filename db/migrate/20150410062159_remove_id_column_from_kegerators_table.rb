@@ -1,4 +1,5 @@
 class RemoveIdColumnFromKegeratorsTable < ActiveRecord::Migration
+  
   def up
   	remove_column :kegerators, :id
   	# want to make device_id PK
@@ -16,7 +17,6 @@ class RemoveIdColumnFromKegeratorsTable < ActiveRecord::Migration
   end
 
   def down
-
   	execute <<-SQL
   		ALTER TABLE "kegerators" REMOVE PRIMARY KEY ("device_id")
   	SQL
@@ -26,6 +26,6 @@ class RemoveIdColumnFromKegeratorsTable < ActiveRecord::Migration
  	change_column :kegerators, :device_id, null: true
 
  	add_column :kegerators, :id
-
   end
+
 end

@@ -1,3 +1,3 @@
 class Kegerator < ActiveRecord::Base
-	has_and_belongs_to_many :accounts
+	self.primary_key = 'device_id'
 end
