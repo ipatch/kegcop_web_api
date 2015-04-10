@@ -1,4 +1,5 @@
 class APIKey < ActiveRecord::Base
+	self.primary_key = 'access_token'
 
 	before_create :generate_access_token
 
