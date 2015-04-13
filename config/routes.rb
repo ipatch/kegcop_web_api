@@ -9,6 +9,7 @@ Rails.application.routes.draw do
       resources :accounts
       resources :please_work
       resources :kegerators, param: :device_id
+      resources :register
     end
   end
 

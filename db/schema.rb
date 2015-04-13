@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150410062159) do
+ActiveRecord::Schema.define(version: 20150413030848) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,20 +19,23 @@ ActiveRecord::Schema.define(version: 20150410062159) do
   create_table "accounts", force: :cascade do |t|
     t.string   "username"
     t.string   "pin"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
     t.string   "device_id"
-    t.boolean  "is_account_root"
+    t.boolean  "is_account_root", default: false, null: false
+    t.string   "access_token",    default: ""
   end
 
+  add_index "accounts", ["access_token"], name: "index_accounts_on_access_token", unique: true, using: :btree
   add_index "accounts", ["id", "device_id"], name: "one_root_user_per_device_id", unique: true, using: :btree
 
-  create_table "api_keys", force: :cascade do |t|
-    t.string   "access_token"
+  create_table "api_keys", primary_key: "access_token", force: :cascade do |t|
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.string   "device_token"
   end
 
+<<<<<<< HEAD
   create_table "events", force: :cascade do |t|
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
@@ -86,6 +89,8 @@ ActiveRecord::Schema.define(version: 20150410062159) do
   create_table "in_app_purchase_schema_info", id: false, force: :cascade do |t|
     t.integer "version", default: 0, null: false
   end
+  add_index "api_keys", ["access_token"], name: "index_api_keys_on_access_token", unique: true, using: :btree
+  add_index "api_keys", ["device_token"], name: "index_api_keys_on_device_token", unique: true, using: :btree
 
   create_table "kegerators", primary_key: "device_id", force: :cascade do |t|
     t.string   "name"
