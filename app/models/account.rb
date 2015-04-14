@@ -7,6 +7,6 @@ class Account < ActiveRecord::Base
 	def check_for_root
 		# how to setup a relationship to a different table -> column?
 
-		if Account.username == 'root' has_one :device_id through: :kegerators
+		# if Account.username == 'root' has_one :device_id through: :kegerators
 	end
 end

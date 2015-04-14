@@ -11,7 +11,7 @@ class API::V1::RegisterController < ApplicationController
 		if api_key
 			render json: {api_key: api_key.access_token}
 		else
-			render json: {error: :device_token}
+			render status: 401, json: {error: :device_token}
 		end	
 	end
 
