@@ -6,6 +6,12 @@ gem 'rails', '4.2.1'
 # PostgreSQL gem (database adapter)
 gem 'pg'
 
+# add mysql2 gem for travis-ci.org support
+gem 'mysql2'
+
+# add gem sqlite3 for travis-ci.org support
+gem 'sqlite3'
+
 # rails ~ 4.2.1 extracted the 'respond_to' feature into a gem
 gem 'responders'
 
