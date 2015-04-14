@@ -1,4 +1,4 @@
-# README - KegCop-Web
+# README - KegCop-Web [![Build Status](https://travis-ci.org/ipatch/kegcop-web.svg?branch=master)](https://travis-ci.org/ipatch/kegcop-web)
 This README contains steps necessary to get the [application](http://kegcop.chrisrjones.com/) up and running.
 
 ## Server Specs
