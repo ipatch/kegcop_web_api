@@ -22,7 +22,7 @@
 
     <%= render 'layouts/bubbles' %>
 
-    <%= render 'layouts/footer' %>
+    <%= render 'layouts/footer' unless @disable_footer %>
   
 
 <%= render 'layouts/google_analytics' %>
