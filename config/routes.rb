@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions
   resources :static_pages
+  resources :bubbles
 
   root to: 'users#new'
 
