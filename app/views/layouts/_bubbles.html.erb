@@ -25,6 +25,7 @@ h = window.innerHeight;
           return {
             x: interval*20,
             y: 0,
+            // stroke-width="1",
             dx: 5,
             dy: -3 * (Math.random()+1),
             mu: Math.random()*2
@@ -32,10 +33,12 @@ h = window.innerHeight;
         }))
       .enter().append("svg:circle")
         .attr("r", 2.5)
-        .attr("fill","white")
+        .attr("fill","#FFEFA0") // fill
+        .attr("stroke","white") // stroke
+       .attr("stroke-width", "1")
         // .attr("opacity",".0.2")
-        .style("stroke-opacity", "0.4")
-        .style("fill-opacity", "0.2");
+        .style("stroke-opacity", "1.0")
+        .style("fill-opacity", ".5");
     
     var text = svg.append("svg:text")
         .attr("x", 20)
