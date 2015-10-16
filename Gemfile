@@ -7,7 +7,7 @@ gem 'rails', '4.2.1'
 gem 'pg'
 
 # add mysql2 gem for travis-ci.org support
-gem 'mysql2'
+# gem 'mysql2'
 
 # add gem sqlite3 for travis-ci.org support
 gem 'sqlite3'
