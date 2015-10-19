@@ -10,6 +10,10 @@ Rails.application.routes.draw do
       resources :please_work
       resources :kegerators, param: :device_id
       resources :register
+      resources :csv_files do
+        get 'index'
+        post 'create'
+      end
     end
   end
 
@@ -42,14 +46,4 @@ Rails.application.routes.draw do
 
   # add the below route to complete ios on rails tutorial
   # kegcop-web::Application.routes.draw do
-  #   scope module: :api, defaults: { format: 'json' } do
-  #     namespace :v1 do ## resources will be here
-  #       namespace :events do
-  #         resources :nearests, only: [:index]
-  #       end
-        
-  #       resources :events, only: [:create, :show, :update]
-  #   end
-  # end
-
 end

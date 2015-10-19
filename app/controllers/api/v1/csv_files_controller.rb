@@ -1,0 +1,67 @@
+class API::V1::CsvFilesController < ApplicationController
+  
+  # see http://stackoverflow.com/questions/15040964/ for explanation
+  skip_before_filter :verify_authenticity_token
+
+  # validate :csv_extension
+
+  def index
+    @csv_files = CsvFile.all
+    if @csv_files
+      render json: @csv_files,
+        # each_serializer: PictureSerializer,
+        root: "csv_files"
+    else
+      @error = Error.new(text: "404 Not found",
+                          status: 404,
+                          url: request.url,
+                          method: request.method)
+      render json: @error.serializer
+    end 
+  end
+
+  def show
+    if @csv_file
+      render json: @csv_file,
+              # serializer: PictureSerializer,
+              root: "csv_file"
+    else
+      @error = Error.new(text: "404 Not found",
+                          status: 404,
+                          url: request.url,
+                          method: request.method)
+      render json: @error.serializer
+    end
+  end
+
+  # POST /csv_files.json
+  def create
+    @csv_file = CsvFile.new(csv_params)
+
+    if @csv_file.save
+      render json: @csv_file,
+        # serializer: PictureSerializer, 
+        meta: { status: 201,
+          message: "201 Created"},
+          root: "csv_file"
+    else
+      @error = Error.new(text: "500 Server Error",
+        status: 500,
+        url: request.url,
+        method: request.method)
+      render :json => @error.serializer
+    end
+  end
+
+  def update
+  end
+
+  def delete
+  end
+
+  private
+
+  def csv_params
+    # params.require(:csv_file).permit(:tempfile,:original_filename,:content_type,:headers)
+  end
+end

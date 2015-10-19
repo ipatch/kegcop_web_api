@@ -3,8 +3,14 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
+# added per "RESTful Rails Development"
+gem 'rails-api'
+
 # PostgreSQL gem (database adapter)
 gem 'pg'
+
+# added per "RESTful Rails Development"
+gem 'activerecord-postgis-adapter'
 
 # add mysql2 gem for travis-ci.org support
 # gem 'mysql2'
@@ -32,8 +38,12 @@ gem 'jbuilder', '~> 2.2.4'
 # gem for parsing JSON
 gem 'oj', '~> 2.10.4'
 
-#Api gems
+#API - Serializer for JSON 
 gem 'active_model_serializers'
+
+gem 'refile', require: 'refile/rails'
+gem 'refile-mini_magick'
+#gem 'mini_magick', '~> 3.7.0'
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
