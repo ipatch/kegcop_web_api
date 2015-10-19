@@ -63,5 +63,7 @@ class API::V1::CsvFilesController < ApplicationController
 
   def csv_params
     # params.require(:csv_file).permit(:tempfile,:original_filename,:content_type,:headers)
+    # params.require(:csv_file).permit(:csv_files)
+    # params.permit(:csv_files)
   end
 end

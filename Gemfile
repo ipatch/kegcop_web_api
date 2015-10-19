@@ -41,7 +41,7 @@ gem 'oj', '~> 2.10.4'
 #API - Serializer for JSON 
 gem 'active_model_serializers'
 
-gem 'refile', require: 'refile/rails'
+gem 'refile', github: 'refile/refile', require: 'refile/rails'
 gem 'refile-mini_magick'
 #gem 'mini_magick', '~> 3.7.0'
 
