@@ -39,9 +39,10 @@ ActiveRecord::Schema.define(version: 20151017161741) do
   add_index "api_keys", ["device_token"], name: "index_api_keys_on_device_token", unique: true, using: :btree
 
   create_table "csv_files", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.string   "csv_id"
+    t.string   "csv_file_id"
   end
 
   create_table "events", force: :cascade do |t|

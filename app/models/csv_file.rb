@@ -17,7 +17,7 @@ validate :file_extension_validation, :csv_size_validation, :if => "csv_file"
 	# attachment :content_type => "text/csv"
 	# http://ryanbigg.com/2009/04/how-rails-works-2-mime-types-respond_to/
 	# attachment :csv, extension: "csv", content_type: "text/csv", raise_errors: true
-	attachment :csv_file, content_type: "text/csv", extension: "csv", raise_errors: true
+	attachment :csv_file, extension: "csv", raise_errors: true
 
 private
 
@@ -27,10 +27,12 @@ private
 
 	NUM_BYTES_LIMIT = 4000
 	def csv_size_validation
+		# binding.pry
 		# if (@csv_file.size.to_f / NUM_BYTES_LIMIT) > 2 
 		# 	errors.add(:csv_file, 'File size cannot be over four kilobyte.')
 		# end
-		errors[:csv_file] << "size can't exceed 4KB" if csv_file.size > NUM_BYTES_LIMIT
+		errors.add(:csv_file, "file size can't exceed 4KB") if csv_file.size > NUM_BYTES_LIMIT
+		# binding.pry
 	end
 
 	def csv_file_id

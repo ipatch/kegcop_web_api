@@ -36,6 +36,7 @@ class API::V1::CsvFilesController < ApplicationController
 
   # POST /csv_files.json
   def create
+    # binding.pry
     @csv_file = CsvFile.new(csv_params)
 
     if @csv_file.save
@@ -45,11 +46,12 @@ class API::V1::CsvFilesController < ApplicationController
           message: "201 Created"},
           root: "csv_file"
     else
-      @error = Error.new(text: "500 Server Error",
-        status: 500,
-        url: request.url,
-        method: request.method)
-      render :json => @error.serializer
+      render json: { error: "file can't be uploaded"}
+      # @error = Error.new(text: "500 Server Error",
+      #   status: 500,
+      #   url: request.url,
+      #   method: request.method)
+      # render :json => @error.serializer
     end
   end
 
@@ -62,6 +64,7 @@ class API::V1::CsvFilesController < ApplicationController
   private
 
   def csv_params
+    params.permit(:csv_file)
     # params.require(:csv_file).permit(:tempfile,:original_filename,:content_type,:headers)
     # params.require(:csv_file).permit(:csv_files)
     # params.permit(:csv_files)
