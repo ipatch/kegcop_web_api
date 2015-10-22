@@ -81,3 +81,4 @@ config/local_env.yml
 
 # Ignore the compiled assets
 /public/assets/*
+/public/uploads/*
