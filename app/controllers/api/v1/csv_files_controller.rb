@@ -26,11 +26,12 @@ class API::V1::CsvFilesController < ApplicationController
               # serializer: PictureSerializer,
               root: "csv_file"
     else
-      @error = Error.new(text: "404 Not found",
-                          status: 404,
-                          url: request.url,
-                          method: request.method)
-      render json: @error.serializer
+      # @error = Error.new(text: "404 Not found",
+      #                     status: 404,
+      #                     url: request.url,
+      #                     method: request.method)
+      # render json: @error.serializer
+      render json: { error: "file can't be found :'("}
     end
   end
 
@@ -40,6 +41,7 @@ class API::V1::CsvFilesController < ApplicationController
     @csv_file = CsvFile.new(csv_params)
 
     if @csv_file.save
+      binding.pry
       render json: @csv_file,
         # serializer: PictureSerializer, 
         meta: { status: 201,
@@ -64,7 +66,8 @@ class API::V1::CsvFilesController < ApplicationController
   private
 
   def csv_params
-    params.permit(:csv_file, :csv_file_filename)
+    binding.pry
+    params.permit(:csv_file)
     # params.require(:csv_file).permit(:tempfile,:original_filename,:content_type,:headers)
     # params.require(:csv_file).permit(:csv_files)
     # params.permit(:csv_files)

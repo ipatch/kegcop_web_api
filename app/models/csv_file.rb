@@ -20,9 +20,9 @@ private
 		errors.add(:csv_file, "file size can't exceed 4KB") if csv_file.size > NUM_BYTES_LIMIT
 		# binding.pry
 	end
-
-	def csv_file_id
-	end
+	# don't use this method!!!
+	# def csv_file_id
+	# end
 # def csv_extension
 #     unless csv_content_type == "text/csv"
 #       errors.add :csv, "format must be csv"
