@@ -37,10 +37,11 @@ class API::V1::CsvFilesController < ApplicationController
 
   # POST /csv_files.json
   def create
-    binding.pry
+    # binding.pry
     @csv_file = CsvFile.new(csv_params)
 
     if @csv_file.save
+
       # binding.pry
       render json: @csv_file,
         # serializer: PictureSerializer, 
@@ -66,8 +67,8 @@ class API::V1::CsvFilesController < ApplicationController
   private
 
   def csv_params
-    binding.pry
-    params.permit(:csv_file, :csv_file_filename, :csv_file_id) # 
+    # binding.pry
+    params.permit(:csv_file, :csv_file_filename, :csv_file_id, :csv_file_content_type) # 
     # params.require(:csv_file).permit(:tempfile,:original_filename,:content_type,:headers)
     # params.require(:csv_file).permit(:csv_files)
     # params.permit(:csv_files)
