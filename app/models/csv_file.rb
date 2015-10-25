@@ -1,12 +1,15 @@
 class CsvFile < ActiveRecord::Base
 
-# validate :csv_extension
-validate :file_extension_validation, :csv_size_validation, :if => "csv_file"
+# validate :csv_extension  :file_extension_validation
+validate :csv_size_validation, :if => "csv_file"
 	
 	# attachment :content_type => "text/csv"
 	# http://ryanbigg.com/2009/04/how-rails-works-2-mime-types-respond_to/
 	# attachment :csv, extension: "csv", content_type: "text/csv", raise_errors: true
-	attachment :csv_file, extension: "csv", content_type: "application/octet-stream", raise_errors: true
+	attachment :csv_file, extension: "csv"
+
+	# content_type: "application/octet-stream", raise_errors: true
+	# , content_type: "multipart/form-data"
 
 private
 
@@ -20,7 +23,7 @@ private
 		errors.add(:csv_file, "file size can't exceed 4KB") if csv_file.size > NUM_BYTES_LIMIT
 		# binding.pry
 	end
-	# don't use this method!!!
+	# don't use the below method!!!
 	# def csv_file_id
 	# end
 # def csv_extension
