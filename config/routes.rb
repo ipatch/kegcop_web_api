@@ -10,10 +10,7 @@ Rails.application.routes.draw do
       resources :please_work
       resources :kegerators, param: :device_id
       resources :register
-      resources :csv_files do
-        get 'index'
-        post 'create'
-      end
+      resources :csv_files
     end
   end
 
