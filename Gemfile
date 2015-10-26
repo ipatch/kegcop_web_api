@@ -86,3 +86,6 @@ gem 'geocoder', '~> 1.2.5'
 #gem 'helios'
 # gem 'dotenv'
 gem 'pry', group: :development
+
+# add ember-rails to hopefully be able to CRUD attachments
+gem 'ember-rails'
