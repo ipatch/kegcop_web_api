@@ -89,3 +89,4 @@ gem 'pry', group: :development
 
 # add ember-rails to hopefully be able to CRUD attachments
 gem 'ember-rails'
+gem 'ember-source', '~> 2.1'

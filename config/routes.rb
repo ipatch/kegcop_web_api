@@ -14,6 +14,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'csv_files' => 'application#index'
+
   # shortened routes, per railscast comment
   get 'signup' => 'users#new'
   get 'login' => 'sessions#new'
