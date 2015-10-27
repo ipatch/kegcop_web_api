@@ -1,0 +1,11 @@
+<h3>csv_files Index</h3>
+<ul>
+  {{#each model as |csv_file|}}
+    <li>
+      {{#link-to 'csv_file' csv_file}}
+        {{csv_file.csv_file_filename}}
+      {{/link-to}}
+      <button {{action 'delete' post}}>Delete</button>
+    </li>
+  {{/each}}
+</ul>
