@@ -87,6 +87,7 @@ gem 'geocoder', '~> 1.2.5'
 # gem 'dotenv'
 gem 'pry', group: :development
 
-# add ember-rails to hopefully be able to CRUD attachments
-gem 'ember-rails'
-gem 'ember-source', '~> 2.1'
+# add ember-rails-cli to hopefully be able to CRUD attachments
+# gem 'ember-rails'
+# gem 'ember-source', '~> 2.1'
+gem "ember-cli-rails"

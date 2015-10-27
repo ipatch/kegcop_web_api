@@ -1,7 +1,15 @@
 require 'api_constraints'
 
 Rails.application.routes.draw do
- # Api definition
+
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+
+  get  'csvfiles'    => 'application#index'
+
+
+
+  # Api definition
   namespace :api, defaults: {format: 'json'} do
     # use scpoe to remove the version number from the API when making a request
     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
@@ -13,8 +21,6 @@ Rails.application.routes.draw do
       resources :csv_files
     end
   end
-
-  get 'csv_files' => 'application#index'
 
   # shortened routes, per railscast comment
   get 'signup' => 'users#new'
