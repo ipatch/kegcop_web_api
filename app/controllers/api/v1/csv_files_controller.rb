@@ -4,11 +4,12 @@ class API::V1::CsvFilesController < ApplicationController
   skip_before_filter :verify_authenticity_token
 
   def index
-    @csv_files = CsvFile.all
-    respond_to do |format|
-      format.html #app/views/api/v1/csv_files/index.html.erb
-      format.json #app/views/api/v1/csv_files/index.json.jbuilder
-    end
+    render json: CsvFile.all
+    # @csv_files = CsvFile.all
+    # respond_to do |format|
+    #   # format.html #app/views/api/v1/csv_files/index.html.erb
+    #   format.json #app/views/api/v1/csv_files/index.json.jbuilder
+    # end
   end
 
   def show
