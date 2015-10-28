@@ -90,4 +90,5 @@ gem 'pry', group: :development
 # add ember-rails-cli to hopefully be able to CRUD attachments
 # gem 'ember-rails'
 # gem 'ember-source', '~> 2.1'
-gem "ember-cli-rails"
+# gem "ember-cli-rails"
+# decided to make ember app independent of rails app.
