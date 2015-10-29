@@ -95,3 +95,11 @@ gem 'pry', group: :development
 # gem 'ember-source', '~> 2.1'
 # gem "ember-cli-rails"
 # decided to make ember app independent of rails app.
+
+group :development do
+    gem 'capistrano',         require: false
+    gem 'capistrano-rvm',     require: false
+    gem 'capistrano-rails',   require: false
+    gem 'capistrano-bundler', require: false
+    gem 'capistrano3-puma',   require: false
+end
