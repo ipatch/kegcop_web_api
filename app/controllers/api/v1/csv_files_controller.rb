@@ -64,9 +64,9 @@ class API::V1::CsvFilesController < ApplicationController
   def destroy
     @csv_file = CsvFile.find(params[:id])
     if @csv_file.destroy
-      render :json => { :head => ok }, status: 200
+      # render :json => { :head => ok }, status: 200
     else
-      render json: {error: "csv file could not be deleted."}, status: 422
+      # render json: {error: "csv file could not be deleted."}, status: 422
     end
   end
 
