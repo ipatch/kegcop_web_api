@@ -69,7 +69,7 @@ scratchpad.txt
 # Add Gemfile.lock - was giving me issues.
 # see this SO thread for more info,
 # http://stackoverflow.com/questions/4151495/
-Gemfile.lock
+# Gemfile.lock
 
 # Add local environment variables file to .gitignore
 config/local_env.yml
