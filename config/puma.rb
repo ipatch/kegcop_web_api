@@ -5,7 +5,7 @@
 # The default is the current directory.
 #
 # directory '/u/apps/lolcat'
-directory '/opt/rails/kegcop'
+# directory '/opt/rails/kegcop'
 
 # Use an object or block as the rack application. This allows the
 # config file to be the application itself.
@@ -41,19 +41,19 @@ daemonize
 # Store the pid of the server in the file at "path".
 #
 # pidfile '/u/apps/lolcat/tmp/pids/puma.pid'
-pidfile '/opt/rails/kegcop/tmp/pids/puma.pid'
+# pidfile '/opt/rails/kegcop/tmp/pids/puma.pid'
 
 # Use "path" as the file to store the server info state. This is
 # used by "pumactl" to query and control the server.
 #
 # state_path '/u/apps/lolcat/tmp/pids/puma.state'
-state_path '/opt/rails/kegcop/tmp/pids/puma.state'
+# state_path '/opt/rails/kegcop/tmp/pids/puma.state'
 
 # Redirect STDOUT and STDERR to files specified. The 3rd parameter
 # ("append") specifies whether the output is appended, the default is
 # "false".
 #
-stdout_redirect '/opt/rails/kegcop/tmp/log/stdout', '/opt/rails/kegcop/tmp/log/stderr'
+# stdout_redirect '/opt/rails/kegcop/tmp/log/stdout', '/opt/rails/kegcop/tmp/log/stderr'
 # stdout_redirect '/u/apps/lolcat/log/stdout', '/u/apps/lolcat/log/stderr', true
 
 # Disable request logging.
@@ -169,4 +169,4 @@ bind 'tcp://0.0.0.0:9292'
 # activate_control_app 'unix:///var/run/pumactl.sock'
 # activate_control_app 'unix:///var/run/pumactl.sock', { auth_token: '12345' }
 # activate_control_app 'unix:///var/run/pumactl.sock', { no_token: true }
-activate_control_app 'unix:///opt/rails/kegcop/tmp/sockets/pumactl.sock'
+# activate_control_app 'unix:///opt/rails/kegcop/tmp/sockets/pumactl.sock'
