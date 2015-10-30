@@ -31,7 +31,7 @@ gem 'uglifier', '>= 1.3.0'
 # removed 'coffe-rails' per this guide,
 # https://dockyard.com/blog/2014/05/07/building-an-ember-app-with-rails-part-1
 
-# gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 # gem 'jquery-rails'
