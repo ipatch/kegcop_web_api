@@ -14,10 +14,13 @@ class API::V1::CsvFilesController < ApplicationController
 
   def show
     @csv_file = CsvFile.find(params[:id])
-    respond_to do |format|
-      format.html
-      format.json { render json: @csv_file.as_json(only: [:id]) }
-    end
+
+    # respond_to do |format|
+
+      redirect_to CsvFile.find(params[:id]).csv_file_url
+      # format.html
+      # format.json { render json: @csv_file.as_json(only: [:id]) }
+    # end
   end
 
   # POST /csv_files.json
