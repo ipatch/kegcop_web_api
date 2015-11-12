@@ -21,6 +21,7 @@ set :deploy_via,      :remote_cache
 set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 # files we want symlinking to specific entries in shared.
 set :linked_files,    %w{config/database.yml config/secrets.yml}
+set :linked_dirs, fetch(:linked_dirs) + %w{public/uploads}
 set :puma_bind,       'tcp://0.0.0.0:9292' 
 set :puma_bind,       'unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock'
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
@@ -60,7 +61,10 @@ namespace :deploy do
   task :check_revision do
     on roles(:app) do
       # preserve uploaded files through Capistrano deployments
-      execute :ln, "-nfs #{shared_path}/public/uploads/store #{release_path}/public/uploads/store"
+      # ln -n = ln -h, which if target dir is a sym link don't follow
+      # ln -f, if already linked unlink so new link can be created
+      # ln -s, creates a symlink
+      # execute :ln, "-nfs #{shared_path}/public/uploads/store #{release_path}/public/uploads/store"
       unless `git rev-parse HEAD` == `git rev-parse origin/master`
         puts "WARNING: HEAD is not the same as origin/master"
         puts "Run `git push` to sync changes."
