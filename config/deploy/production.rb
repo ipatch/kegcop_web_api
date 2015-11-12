@@ -33,11 +33,11 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
 
-# preserve uploaded files through Capistrano deployments
-before "deploy:restart", :symlink_directories
-task :symlink_directories do
-  execute :ln, "-nfs #{shared_path}/public/uploads/store #{release_path}/public/uploads/store"
-end
+
+# before "deploy:restart", :symlink_directories
+# task :symlink_directories do
+#   execute :ln, "-nfs #{shared_path}/public/uploads/store #{release_path}/public/uploads/store"
+# end
 
 
 
@@ -68,6 +68,8 @@ namespace :deploy do
   desc "Make sure local git is in sync with remote."
   task :check_revision do
     on roles(:app) do
+      # preserve uploaded files through Capistrano deployments
+      execute :ln, "-nfs #{shared_path}/public/uploads/store #{release_path}/public/uploads/store"
       unless `git rev-parse HEAD` == `git rev-parse origin/master`
         puts "WARNING: HEAD is not the same as origin/master"
         puts "Run `git push` to sync changes."
