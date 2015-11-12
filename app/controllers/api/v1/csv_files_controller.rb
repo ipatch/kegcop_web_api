@@ -9,8 +9,8 @@ class API::V1::CsvFilesController < ApplicationController
 
   def show
     @csv_file = CsvFile.find(params[:id])
-      # redirect_to CsvFile.find(params[:id]).csv_file_url
-      render json: CsvFile.find(params[:id]).csv_file_url
+      redirect_to CsvFile.find(params[:id]).csv_file_url
+      # render json: CsvFile.find(params[:id]).csv_file_url
   end
 
   # POST /csv_files.json
