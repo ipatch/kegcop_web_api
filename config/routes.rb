@@ -7,9 +7,8 @@ Rails.application.routes.draw do
 
   # get  'csvfiles'    => 'application#index'
 
-
-
   # Api definition
+    # the below line specifies JSON as the default API format
   namespace :api, defaults: {format: 'json'} do
     # use scpoe to remove the version number from the API when making a request
     scope module: :v1, constraints: ApiConstraints.new(version: 1, default: true) do
@@ -39,15 +38,12 @@ Rails.application.routes.draw do
 
   root to: 'users#new'
 
-  # the below line specifies JSON as the default API format
-
   # comment the below block so it doesn't conflict with ios on rails tut
   # namespace :api, defaults: {format: 'json'} do
   #   namespace :v1 do
   #     resources :users
   #   end
   # end
-
 
   # add the below route to complete ios on rails tutorial
   # kegcop-web::Application.routes.draw do

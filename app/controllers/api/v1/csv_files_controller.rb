@@ -17,9 +17,12 @@ class API::V1::CsvFilesController < ApplicationController
 
     # respond_to do |format|
 
-      redirect_to CsvFile.find(params[:id]).csv_file_url
+      # redirect_to CsvFile.find(params[:id]).csv_file_url
       # format.html
-      # format.json { render json: @csv_file.as_json(only: [:id]) }
+      # this function should return json
+      # { url: csv_file_url }
+      # render json: 
+      render json: CsvFile.find(params[:id]).csv_file_url
     # end
   end
 
