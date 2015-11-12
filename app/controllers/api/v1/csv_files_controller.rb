@@ -5,11 +5,6 @@ class API::V1::CsvFilesController < ApplicationController
 
   def index
     render json: CsvFile.all
-    # @csv_files = CsvFile.all
-    # respond_to do |format|
-    #   # format.html #app/views/api/v1/csv_files/index.html.erb
-    #   format.json #app/views/api/v1/csv_files/index.json.jbuilder
-    # end
   end
 
   def show
@@ -38,10 +33,6 @@ class API::V1::CsvFilesController < ApplicationController
     respond_to do |format|
         format.html { render html: 'edit' }
         format.json { render json: @csv_file.as_json(only: [:id]) }
-        # format.json { render action: 'edit'}
-    # else
-    #     format.html { render action: 'edit' }
-    #     format.json { render json: @csv_file.errors, status: :unprocessable_entity}
     end
   end
 
