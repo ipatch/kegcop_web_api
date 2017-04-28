@@ -9,7 +9,7 @@ server 'chrisrjones.com', port: '4321', user: 'capin', roles: [:web, :app, :db],
 
 set :repo_url,        'git@github.com:ipatch/kegcop-web.git'
 set :application,     'Kegcop'
-set :user,            'capin'
+set :user,            'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
@@ -23,7 +23,7 @@ set :deploy_to,       "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :linked_files,    %w{config/database.yml config/secrets.yml}
 # see this SO answer, http://stackoverflow.com/a/32011351/708807
 set :linked_dirs, fetch(:linked_dirs, []).push('public/uploads')
-set :puma_bind,       'tcp://0.0.0.0:9292' 
+set :puma_bind,       'tcp://0.0.0.0:9292'
 set :puma_bind,       'unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock'
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
@@ -133,7 +133,7 @@ end
 # Global options
 # --------------
 set :ssh_options, {
-   keys: %w(/Users/capin/.ssh/id_rsa),
+   keys: %w(/Users/deploy/.ssh/id_rsa),
    forward_agent: true,
    auth_methods: %w(publickey password)
    # port: 4321,
