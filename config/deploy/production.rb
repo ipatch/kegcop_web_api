@@ -146,7 +146,7 @@ server '107.170.40.252',
   roles: %w{web app},
   ssh_options: {
     user: 'deploy', # overrides user setting above
-    keys: %w(/home/user_name/.ssh/id_rsa),
+    keys: %w(/home/deploy/.ssh/id_rsa),
     forward_agent: false,
     auth_methods: %w(publickey password)
 #     # password: 'please use keys'
