@@ -15,6 +15,8 @@ set :application, 'Kegcop'
 # set :use_sudo, false
 # set :port, "4321"
 
+set :log_level, :debug
+
 # setup repo details
 
 # Note: the below setting is not required anymore.
