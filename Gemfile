@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby "2.3.1"
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 
@@ -41,7 +43,7 @@ gem 'jquery-rails'
 # gem for parsing JSON
 gem 'oj', '~> 2.10.4'
 
-#API - Serializer for JSON 
+#API - Serializer for JSON
 gem 'active_model_serializers'
 
 # gem for handling file uploads within a rails app
