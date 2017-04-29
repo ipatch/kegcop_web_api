@@ -5,7 +5,7 @@ set :application, 'Kegcop'
 set :deploy_user, 'deploy'
 
 # setup repo details
-set :scm :git
+set :scm, :git
 set :repo_url, 'git@github.com:ipatch/kegcop-web.git'
 
 
