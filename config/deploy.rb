@@ -24,7 +24,7 @@ set :application, 'Kegcop'
 # set :scm, :git
 
 
-set :repo_url, 'git@github.com:ipatch/kegcop-web.git'
+# set :repo_url, 'git@github.com:ipatch/kegcop-web.git'
 
 
 
