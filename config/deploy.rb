@@ -9,11 +9,11 @@ lock '3.8.1'
 # server '107.170.40.252', port: '4321', user: 'deploy', roles: [:web, :app, :db], primary: true
 
 set :application, 'Kegcop'
-set :deploy_user, 'deploy'
-set :deploy_to, "/home/#{user}/apps/#{application}"
-set :deploy_via, :remote_cache
-set :use_sudo, false
-set :port, "4321"
+# set :deploy_user, 'deploy'
+# set :deploy_to, "/home/#{user}/apps/#{application}"
+# set :deploy_via, :remote_cache
+# set :use_sudo, false
+# set :port, "4321"
 
 # setup repo details
 
