@@ -5,7 +5,7 @@
 
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
-server '107.170.40.252:4321', port: '4321', user: 'deploy', roles: [:web, :app, :db], primary: true
+server 'kegcop.chrisrjones.com', port: '4321', user: 'deploy', roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:ipatch/kegcop-web.git'
 set :application,     'Kegcop'
