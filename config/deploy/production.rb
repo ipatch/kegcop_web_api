@@ -5,7 +5,8 @@
 
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
-server 'kegcop.chrisrjones.com', port: '4321', user: 'deploy', primary: true
+
+# server 'kegcop.chrisrjones.com', port: '4321', user: 'deploy', primary: true
 
 set :repo_url,        'git@github.com:ipatch/kegcop-web.git'
 set :application,     'Kegcop'
@@ -132,12 +133,12 @@ end
 #
 # Global options
 # --------------
-set :ssh_options, {
-   keys: %w(/Users/deploy/.ssh/id_rsa),
-   forward_agent: true,
-   auth_methods: %w(publickey password)
-   # port: 4321,
-  }
+# set :ssh_options, {
+#    keys: %w(/Users/deploy/.ssh/id_rsa),
+#    forward_agent: true,
+#    auth_methods: %w(publickey password)
+#    # port: 4321,
+#   }
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
