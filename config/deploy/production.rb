@@ -148,6 +148,7 @@ server '107.170.40.252',
     user: 'deploy', # overrides user setting above
     keys: %w(/home/deploy/.ssh/id_rsa),
     forward_agent: false,
-    auth_methods: %w(publickey password)
+    auth_methods: %w(publickey password),
+    port: 4321
 #     # password: 'please use keys'
   }
