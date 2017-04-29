@@ -1,4 +1,4 @@
-require "bundler/capistrano"
+# require "bundler/capistrano"
 
 set :stages, ["staging", "production"]
 set :default_stage, "production"
