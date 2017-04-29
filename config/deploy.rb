@@ -1,5 +1,8 @@
 require "bundler/capistrano"
 
+set :stages, ["staging", "production"]
+set :default_stage, "production"
+
 # config valid only for current version of Capistrano
 lock '3.8.1'
 
