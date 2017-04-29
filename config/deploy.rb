@@ -2,9 +2,13 @@
 lock '3.8.1'
 
 set :application, 'Kegcop'
+set :deploy_user, 'deploy'
+
+# setup repo details
+set :scm :git
 set :repo_url, 'git@github.com:ipatch/kegcop-web.git'
 
-ssh_options[:port] = 4321
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
