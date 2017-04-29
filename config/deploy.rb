@@ -6,7 +6,7 @@ set :default_stage, "production"
 # config valid only for current version of Capistrano
 lock '3.8.1'
 
-server '107.170.40.252', port: '4321', user: 'deploy', roles: [:web, :app, :db], primary: true
+# server '107.170.40.252', port: '4321', user: 'deploy', roles: [:web, :app, :db], primary: true
 
 set :application, 'Kegcop'
 set :deploy_user, 'deploy'
