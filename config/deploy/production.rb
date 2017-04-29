@@ -5,7 +5,7 @@
 
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
-server 'kegcop.chrisrjones.com', port: '4321', user: 'deploy', roles: [:web, :app, :db], primary: true
+server 'kegcop.chrisrjones.com', port: '4321', user: 'deploy', primary: true
 
 set :repo_url,        'git@github.com:ipatch/kegcop-web.git'
 set :application,     'Kegcop'
@@ -143,7 +143,7 @@ set :ssh_options, {
 # ------------------------------------
 server '107.170.40.252',
   user: 'deploy',
-  roles: %w{web app},
+  roles: %w{web app db}, # roles: [:web, :app, :db],
   ssh_options: {
     user: 'deploy', # overrides user setting above
     keys: %w(/home/deploy/.ssh/id_rsa),
