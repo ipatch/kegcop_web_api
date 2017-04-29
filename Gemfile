@@ -2,13 +2,11 @@ source 'https://rubygems.org'
 
 ruby "2.3.1"
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.7.1'
 
 # added per "RESTful Rails Development"
 gem 'rails-api'
 
-# PostgreSQL gem (database adapter)
 gem 'pg'
 
 # added per "RESTful Rails Development"
@@ -83,25 +81,19 @@ group :test do
 	gem 'ffaker'
 end
 
-gem 'puma', group: :production
-
-
 gem 'geocoder', '~> 1.2.5'
 # gems required to add the helios framework.
 #gem 'helios'
 # gem 'dotenv'
 gem 'pry', group: :development
 
-# add ember-rails-cli to hopefully be able to CRUD attachments
-# gem 'ember-rails'
-# gem 'ember-source', '~> 2.1'
-# gem "ember-cli-rails"
-# decided to make ember app independent of rails app.
-
 group :development do
+		gem 'web-console', '~> 2.0'
     gem 'capistrano',         require: false
     gem 'capistrano-rvm',     require: false
     gem 'capistrano-rails',   require: false
     gem 'capistrano-bundler', require: false
     gem 'capistrano3-puma',   require: false
 end
+
+gem 'puma', group: :production
