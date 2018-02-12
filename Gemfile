@@ -66,6 +66,9 @@ gem 'cheat', '~> 1.3', '>= 1.3.3'
 # add gem to support contact form
 # gem 'active_attr', '~> 0.10.2'
 
+# Add bootstrap to project
+gem 'bootstrap-sass', '~> 3.3.6'
+
 # add support for the JavaScript library D3
 gem 'd3_rails', '~> 4.1', '>= 4.1.1'
 
