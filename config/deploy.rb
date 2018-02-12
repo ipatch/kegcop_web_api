@@ -4,7 +4,7 @@ set :stages, ["staging", "production"]
 set :default_stage, "production"
 
 # config valid only for current version of Capistrano
-lock '3.8.1'
+lock '3.10.1'
 
 # server '107.170.40.252', port: '4321', user: 'deploy', roles: [:web, :app, :db], primary: true
 
