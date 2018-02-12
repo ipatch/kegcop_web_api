@@ -70,7 +70,7 @@ gem 'cheat', '~> 1.3', '>= 1.3.3'
 gem 'd3_rails', '~> 4.1', '>= 4.1.1'
 
 group :test do
-	gem 'rspec', '~> 3.1.0'
+	gem 'rspec', '~> 3.7.0'
 	gem 'factory_girl', '~> 4.5.0'
 	gem 'shoulda-matchers', '~> 2.7.0'
 	gem 'ffaker', '~> 2.8', '>= 2.8.1'
