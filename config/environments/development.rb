@@ -35,11 +35,24 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-
-  # add below lines to configure ember for development
-  # config.ember.variant = :development
-  # config.ember.app_name = :Kegcop
   
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # General Settings
+  config.app_domain = 'kegcop.chrisrjones.com'
+
+  config.action_mailer.default_url_options = { host: config.app_domain }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.chrisrjones.com",
+    :port                 => 587,
+    :domain               => 'kegcop.chrisrjones.com',
+    :user_name            => ENV['MAIL_ADDRESS'],
+    :password             => ENV['MAIL_PASSWORD'],
+    :authentication       => 'plain',
+    :enable_starttls_auto => true,
+    openssl_verify_mode: 'none'
+  }
 end

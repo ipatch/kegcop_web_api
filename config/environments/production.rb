@@ -48,7 +48,7 @@ Rails.application.configure do
   # config.force_ssl = true
 
   # Set to :debug to see everything in the log.
-  config.log_level = :info
+  config.log_level = :debug
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -86,18 +86,28 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-# Example Action Mailer Configuration
+  # Do not dump schema after migrations.
+  config.active_record.dump_schema_after_migration = false
+
+  config.action_mailer.default_options = {from: 'no-reply@kegcop.chrisrjones.com'}
+
+  config.action_mailer.default_url_options = { :host => "kegcop.chrisrjones.com" }
+
+  # General Settings
+  config.app_domain = 'chrisrjones.com'
+
+  config.action_mailer.default_url_options = { host: config.app_domain }
+  config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.chrisrjones.com',
-    domain:               'chrisrjones.com', 
-    # openssl_verify_mode:  OpenSSL::SSL::VERIFY_NONE,
-    enable_starttls_auto: true,
-    openssl_verify_mode:  'none'
+    :address              => "smtp.chrisrjones.com",
+    :port                 => 587,
+    :domain               => 'chrisrjones.com',
+    :user_name            => ENV['MAIL_ADDRESS'],
+    :password             => ENV['MAIL_PASSWORD'],
+    :authentication       => 'plain',
+    :enable_starttls_auto => true,
+    openssl_verify_mode: 'none'
   }
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.default_options = {from: 'no-reply@chrisrjones.com'}
-
-  config.action_mailer.default_url_options = { :host => "chrisrjones.com" }
 
 end

@@ -32,9 +32,6 @@ pickle-email-*.html
 # Comment out these rules if your OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
 config/secrets.yml
-config/database.yml
-#config/environments/development.rb
-#config/environments/production.rb
 
 # Environment normalization:
 /.bundle
@@ -53,10 +50,11 @@ doc/app
 *.swp
 *~
 # Ignore stupid OS X GUI file placement for Finder
-.DS_Store
+**/.DS_Store
 # Ignore vim swap files
 *.swo
 *.swp
+
 # Ignore my scratchpad files
 scratchpad
 ._scratchpad
@@ -66,23 +64,6 @@ scratchpad.txt
 # Ignore deleted files in Sublime text
 .Trash-1000
 
-# Add Gemfile.lock - was giving me issues.
-# see this SO thread for more info,
-# http://stackoverflow.com/questions/4151495/
-# 
-# Cap requires a Gemfile.lock be checked into version control.
-#
-# Gemfile.lock
-
-# Add local environment variables file to .gitignore
-config/local_env.yml
-
-# Ignore the sass-cache, see below SO thread
-# http://stackoverflow.com/questions/20430291
-.sass-cache
-.sass-cache/*
-
 # Ignore the compiled assets
 /public/assets/*
 /public/uploads/*
-npm-debug.log
