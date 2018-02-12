@@ -42,7 +42,7 @@ gem 'active_model_serializers', '~> 0.10.7'
 
 # gem for handling file uploads within a rails app
 gem 'refile', '~> 0.6.2'
-gem 'refile-mini_magick', '~> 0.2.0', :git => 'git://github.com:refile/refile-mini_magick.git'
+gem 'refile-mini_magick', '~> 0.2.0', :git => 'https://github.com:refile/refile-mini_magick.git'
 #gem 'mini_magick', '~> 3.7.0'
 
 # bundle exec rake doc:rails generates the API under doc/api.
