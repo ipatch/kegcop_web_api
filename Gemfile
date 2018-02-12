@@ -24,9 +24,6 @@ gem 'rails-api', '~> 0.4.1'
 # rails ~ 4.2.1 extracted the 'respond_to' feature into a gem
 gem 'responders', '~> 2.4'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -68,6 +65,9 @@ gem 'cheat', '~> 1.3', '>= 1.3.3'
 
 # Add bootstrap to project
 gem 'bootstrap-sass', '~> 3.3.6'
+# Use SCSS for stylesheets
+gem 'sass-rails', '~> 5.0'
+gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 
 # add support for the JavaScript library D3
 gem 'd3_rails', '~> 4.1', '>= 4.1.1'

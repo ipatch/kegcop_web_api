@@ -1,35 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>KegCop</title>
+  <head>
+    <title>KegCop Web API - an API for KegCop</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
 
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <%= render 'layouts/ie_shim' %>
+  </head>
+  <body>
+  <div class="wrapper">
+    <%= render 'layouts/nav' unless @disable_nav %>
 
+      <%= yield %>
 
-  <%= stylesheet_link_tag    "application", :media => "all" %>
- <%= javascript_include_tag "application" %>
+      <%= render 'layouts/bubbles' %>
 
-  <%= csrf_meta_tags %>
-  <%= favicon_link_tag 'favicon.ico' %>
-  <%= render 'layouts/ie_shim' %>
-  
-  
-</head>
-<body>
-<div class="wrapper">
-  <%= render 'layouts/nav' unless @disable_nav %>
+      <%= render 'layouts/footer' unless @disable_footer %>
+    
 
-    <%= yield %>
-
-    <%= render 'layouts/bubbles' %>
-
-    <%= render 'layouts/footer' unless @disable_footer %>
-  
-
-<%= render 'layouts/google_analytics' %>
-<%= render 'layouts/beer_background' %>
-<!-- <%= audio_tag("/audios/bottle-open.ogg", autoplay: true, controls: false) %> -->
-</div>
-
-</body>
-
+  <%= render 'layouts/google_analytics' %>
+  <%= render 'layouts/beer_background' %>
+  <!-- <%= audio_tag("/audios/bottle-open.ogg", autoplay: true, controls: false) %> -->
+  </div>
+  </body>
 </html>
