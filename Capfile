@@ -1,37 +1,31 @@
-# Load DSL and set up stages
+# default deploy_config_path is 'config/deploy.rb'
+set :deploy_config_path, 'cap/deploy.rb'
+# default stage_config_path is 'config/deploy'
+set :stage_config_path, 'cap/stages'
+
+# previous variables MUST be set before 'capistrano/setup' # Load DSL and set up stages
 require 'capistrano/setup'
 
 # Include default deployment tasks
 require 'capistrano/deploy'
 
-# Include tasks from other gems included in your Gemfile
-#
-# For documentation on these, see for example:
-#
-#   https://github.com/capistrano/rvm
-#   https://github.com/capistrano/rbenv
-#   https://github.com/capistrano/chruby
-#   https://github.com/capistrano/bundler
-  # https://github.com/capistrano/rails
-#   https://github.com/capistrano/passenger
-
-# require 'bundler/capistrano'
-require 'capistrano/rails'
 require 'capistrano/bundler'
+require 'capistrano/rails'
+require 'capistrano/rails/assets'
+require 'capistrano/rails/migrations'
 require 'capistrano/rvm'
-require 'capistrano/puma'
-install_plugin Capistrano::Puma
-
 require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
-# require 'capistrano/rvm'
-# require 'capistrano/rbenv'
-# require 'capistrano/chruby'
-# require 'capistrano/bundler'
-# require 'capistrano/rails/assets'
-# require 'capistrano/rails/migrations'
-# require 'capistrano/passenger'
+set :rvm_type, :user
+set :rvm_ruby_version, '2.3.1'
+set :rvm_map_bins, %{rake gem bundle ruby}
+
+# Add the below line, see: https://stackoverflow.com/a/43021458/708807
+require 'capistrano/puma'
+install_plugin Capistrano::Puma # load_hooks: false  Default puma tasks
+require "capistrano/nginx"
+install_plugin Capistrano::Puma::Nginx
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
-Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
+Dir.glob('cap/tasks/*.rake').each { |r| import r }
