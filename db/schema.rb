@@ -41,7 +41,6 @@ ActiveRecord::Schema.define(version: 20151017161741) do
   create_table "csv_files", force: :cascade do |t|
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
-    t.string   "csv_id"
     t.string   "csv_file_id"
     t.string   "csv_file_filename"
     t.string   "csv_file_content_type"
