@@ -10,6 +10,10 @@ gem 'pg', '~> 0.20.0'
 # added per "RESTful Rails Development"
 gem 'rails-api', '~> 0.4.1'
 
+###
+# NOTE: the below gem was giving me all sorts of nasty
+# ...build errors when bundling
+###
 # added per "RESTful Rails Development"
 # gem 'activerecord-postgis-adapter', '~> 5.2'
 # gem 'activerecord-postgis-adapter', '~> 4.1', '>= 4.1.1'
