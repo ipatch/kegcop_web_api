@@ -40,6 +40,7 @@ production:
   adapter: postgresql
   encoding: utf8
   database: kegcop_web_api_prod
+  host: localhost
   pool: 5
   username: <%= ENV["PG_USER"] %>
   password: <%= ENV["PG_PASS"] %>
