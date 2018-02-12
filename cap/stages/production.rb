@@ -5,7 +5,7 @@
 
 server '107.170.40.252', port: 4321, user: 'deploy', roles: %w{web app db}, primary: true
   
-ssh_options: {
+set :ssh_options, {
   keys: %w(/home/deploy/.ssh/id_rsa),
   forward_agent: true,
   auth_methods: %w(publickey),
