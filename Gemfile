@@ -11,7 +11,8 @@ gem 'pg', '~> 0.20.0'
 gem 'rails-api', '~> 0.4.1'
 
 # added per "RESTful Rails Development"
-gem 'activerecord-postgis-adapter', '~> 5.2'
+# gem 'activerecord-postgis-adapter', '~> 5.2'
+# gem 'activerecord-postgis-adapter', '~> 4.1', '>= 4.1.1'
 
 # add gem sqlite3 for travis-ci.org support
 # gem 'sqlite3'
@@ -33,12 +34,13 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.2.4'
+gem 'jbuilder', '~> 2.2.4'
 # gem for parsing JSON
 gem 'oj', '~> 2.10.4'
 
 #API - Serializer for JSON
 gem 'active_model_serializers', '~> 0.10.7'
+# gem 'active_model_serializers', '~> 0.10.0'
 
 # gem for handling file uploads within a rails app
 gem 'refile', '~> 0.6.2'
@@ -58,7 +60,7 @@ gem 'therubyracer', '~> 0.12.3'
 gem 'cheat', '~> 1.3', '>= 1.3.3'
 
 # add gem to support contact form
-gem 'active_attr', '~> 0.10.2'
+# gem 'active_attr', '~> 0.10.2'
 
 # add support for the JavaScript library D3
 gem 'd3_rails', '~> 4.1', '>= 4.1.1'
