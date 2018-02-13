@@ -165,3 +165,4 @@ namespace :deploy do
     after :finishing,    :compile_assets
     after :finishing, "deploy:cleanup"
   end
+end
