@@ -9,8 +9,7 @@ set :ssh_options, {
   keys: %w($HOME/.ssh/id_rsa),
   forward_agent: true,
   auth_methods: %w(publickey),
-  user: 'deploy',
-  port: 4321
+  user: 'deploy'
 }
 
 set :rails_env, :production
