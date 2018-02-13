@@ -18,6 +18,7 @@ SSHKit.config.command_map[:rake] = "#{fetch(:default_env)[:rvm_bin_path]}/rvm ru
 # set the default location for the app will be deployed to
 set :user, "deploy"
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
+set :use_sudo,        false
 
 set :branch,           'master'
 set :keep_releases,   5
