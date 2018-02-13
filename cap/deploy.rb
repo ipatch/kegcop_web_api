@@ -19,11 +19,13 @@ set :bundle_flags, '--deployment'
 set :rvm_roles, [:app, :web, :db]
 # SSHKit.config.command_map[:rake] = "#{fetch(:default_env)[:rvm_bin_path]}/rvm ruby-#{fetch(:rvm_ruby_version)} do bundle exec rake"
 
+
 # set the default location for the app will be deployed to
 set :user, "deploy"
 set :use_sudo, false 
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 # set :use_sudo,        false
+set :current_directory, "/home/#{fetch(:user)}/apps/#{fetch(:application)}/current"
 
 set :branch,           'master'
 set :keep_releases,   5
