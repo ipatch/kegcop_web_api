@@ -19,6 +19,7 @@ set :rvm_roles, [:app, :web, :db]
 
 # set the default location for the app will be deployed to
 set :user, "deploy"
+set :use_sudo, false 
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 # set :use_sudo,        false
 
