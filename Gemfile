@@ -44,7 +44,7 @@ gem 'active_model_serializers', '~> 0.10.7'
 # gem 'active_model_serializers', '~> 0.10.0'
 
 # gem for handling file uploads within a rails app
-gem 'refile', '~> 0.6.2'
+gem 'refile', '~> 0.6.2', require: "refile/rails"
 gem 'refile-mini_magick', '~> 0.2.0', :git => 'git@github.com:refile/refile-mini_magick.git'
 #gem 'mini_magick', '~> 3.7.0'
 
