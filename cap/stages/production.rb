@@ -10,6 +10,7 @@ set :ssh_options, {
   forward_agent: true,
   auth_methods: %w(publickey),
   user: 'deploy',
+  port: 4321
 }
 
 set :rails_env, :production
