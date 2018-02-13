@@ -8,6 +8,7 @@
 lock '3.10.1'
 
 set :application,     'KegCopWebApi'
+set :local_user,      'deploy'
 set :repo_url,        'git@github.com:ipatch/kegcop_web_api'
 
 set :rvm_ruby_version, '2.3.1'
