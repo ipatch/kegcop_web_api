@@ -12,6 +12,7 @@ set :local_user,      'deploy'
 set :repo_url,        'git@github.com:ipatch/kegcop_web_api'
 
 set :rvm_ruby_version, '2.3.1'
+set :default_env, { rvm_bin_path: "~/.rvm/bin"}
 # set :default_env, { rvm_bin_path: "~/.rvm/bin"}
 # set :rvm_type, :system
 set :bundle_flags, '--deployment'
