@@ -12,7 +12,7 @@ set :repo_url,        'git@github.com:ipatch/kegcop_web_api'
 
 set :rvm_ruby_version, '2.3.1'
 # set :default_env, { rvm_bin_path: "~/.rvm/bin"}
-set :rvm_type, :system
+# set :rvm_type, :system
 set :bundle_flags, '--deployment'
 set :rvm_roles, [:app, :web, :db]
 # SSHKit.config.command_map[:rake] = "#{fetch(:default_env)[:rvm_bin_path]}/rvm ruby-#{fetch(:rvm_ruby_version)} do bundle exec rake"
