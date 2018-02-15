@@ -35,7 +35,7 @@ server {
 <% else -%>
   listen 80;
 <% end -%>
-  server_name kegcop.chrisrjones.com api.kegcop.chrisrjones.com ;
+  server_name kegcop.chrisrjones.com api.kegcop.chrisrjones.com;
   root <%= current_path %>/public;
   try_files $uri/index.html $uri @puma_<%= fetch(:nginx_config_name) %>;
 
