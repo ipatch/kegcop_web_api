@@ -54,7 +54,7 @@ class API::V1::CsvFilesController < ApplicationController
   def destroy
     @csv_file = CsvFile.find(params[:id])
     @csv_file.destroy
-    redirect_to @csv_files_path
+    redirect_to csv_files_path
 	end
 
   private
