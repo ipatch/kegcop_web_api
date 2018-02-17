@@ -37,14 +37,4 @@ Rails.application.routes.draw do
   resources :bubbles
 
   root to: 'users#new'
-
-  # comment the below block so it doesn't conflict with ios on rails tut
-  # namespace :api, defaults: {format: 'json'} do
-  #   namespace :v1 do
-  #     resources :users
-  #   end
-  # end
-
-  # add the below route to complete ios on rails tutorial
-  # kegcop-web::Application.routes.draw do
 end
