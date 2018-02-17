@@ -57,11 +57,6 @@ class API::V1::CsvFilesController < ApplicationController
     redirect_to @csv_files_path
 	end
 
-
-
-
-  end
-
   private
 
   def csv_params
