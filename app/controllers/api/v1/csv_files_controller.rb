@@ -32,8 +32,12 @@ class API::V1::CsvFilesController < ApplicationController
   def edit
     @csv_file = CsvFile.find(params[:id])
     respond_to do |format|
-        format.html { render html: 'edit' }
-        format.json { render json: @csv_file.as_json(only: [:id]) }
+      format.html { 
+        render html:'edit' 
+      }
+      format.json { 
+        render json:@csv_file.as_json(only: [:id])
+      }
     end
   end
 
