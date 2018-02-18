@@ -3,6 +3,7 @@ class CsvFile < ActiveRecord::Base
 validate :csv_size_validation, :if => "csv_file"
 	# http://ryanbigg.com/2009/04/how-rails-works-2-mime-types-respond_to/
 	attachment :csv_file, extension: "csv"
+	attachment :csv_file, content_type: "text/csv"
 
 private
 
