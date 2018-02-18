@@ -39,6 +39,9 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
+  # file upload settings - paperclip
+  Paperclip.options[:command_path] = "/usr/local/bin"
+
   # General Settings
   config.app_domain = 'kegcop.chrisrjones.com'
 
