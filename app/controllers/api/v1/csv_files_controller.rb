@@ -10,14 +10,32 @@ class API::V1::CsvFilesController < ApplicationController
   end
 
   def show
+
     @csv_file = CsvFile.find_by_id(params[:id])
     if @csv_file.nil?
       respond_to do | format |
         format.html { render(:file => File.join(Rails.root, 'public/404.html'), :status => 404, :layout => false) }
-        # format.js { render json: @csv_file }
         format.json { render json: @csv_file, :status => 404 }
       end
     else
+		  # respond_to do |format|
+			#   format.html # show.html.erb
+      #   format.json { render json: @csv_file }
+      # end
+      redirect_to = CsvFile.find(params[:id]).csv_file_url
+    end
+  end
+
+
+
+    # @csv_file = CsvFile.find_by_id(params[:id])
+    # if @csv_file.nil?
+    #   respond_to do | format |
+    #     format.html { render(:file => File.join(Rails.root, 'public/404.html'), :status => 404, :layout => false) }
+    #     # format.js { render json: @csv_file }
+    #     format.json { render json: @csv_file, :status => 404 }
+    #   end
+    # else
       # redirect_to CsvFile.find_by_id(params [:csv_file_id]).csv_file_url
       
       # @csv_file.csv_file_url
@@ -29,8 +47,7 @@ class API::V1::CsvFilesController < ApplicationController
       # render json: CsvFile.find(params[:id]).csv_file_url
       
       # test to see if cap is deleting files when deploying.
-    end
-  end
+
 
   def new
     @csv_file = CsvFile.new
