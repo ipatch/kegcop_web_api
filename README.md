@@ -10,5 +10,19 @@
 ##  System dependencies
 - Postgres
 
+## Working with `curl`
+
+To test the following csv_files endpoint in this application
+```fish
+curl -I localhost:3000/api/csv_files
+```
+The above `curl` request will print just the headers for the csv_files endpoint.
+
+The `-X` flag specifies the command request, ie. `GET`, `POST`, `DELETE`, `PATCH`.
+
+
+
 ## TODO
 - [ ] flesh out README
+
+

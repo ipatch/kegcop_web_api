@@ -109,20 +109,20 @@ class API::V1::CsvFilesController < ApplicationController
 
   private
 
-  def csv_file_params
-    # def article_params
-		# 	params.require(:article).permit(:title, :text, :slug, :meta_description)
-		# end
+    def csv_file_params
+      # def article_params
+      # 	params.require(:article).permit(:title, :text, :slug, :meta_description)
+      # end
 
-    # binding.pry
-    # params.require(:csv_file).permit(:csv_file_id, :csv_file_filename, :csv_file_content_type, :remove_csv_file)
-    # params.permit(:csv_file_id, :csv_file_filename, :csv_file_content_type)
+      # binding.pry
+      # params.require(:csv_file).permit(:csv_file_id, :csv_file_filename, :csv_file_content_type, :remove_csv_file)
+      # params.permit(:csv_file_id, :csv_file_filename, :csv_file_content_type)
+      
+      # params.permit(:csv_file, options: [:csv_file_id, :csv_file_filename, :csv_file_content_type])
+
+      # params.require(:csv_file).permit(:id, :csv_file_id, :csv_file_filename, :csv_file_content_type)
+
     
-    # params.permit(:csv_file, options: [:csv_file_id, :csv_file_filename, :csv_file_content_type])
-
-    # params.require(:csv_file).permit(:id, :csv_file_id, :csv_file_filename, :csv_file_content_type)
-
-  
-		params.require(:csv_file).permit(:csv_file_id, :csv_file_filename, :csv_file_content_type)
-  end
+      params.require(:csv_file).permit(:csv_file_id, :csv_file_filename, :csv_file_content_type)
+    end
 end
