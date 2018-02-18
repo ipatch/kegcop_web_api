@@ -1,7 +1,7 @@
 class CsvFile < ActiveRecord::Base
 
 	# paperclip
-	has_attached_file :csv_file, default_url: "/public/system/uploads/missing.csv"
+	has_attached_file :csv_file
 	# validates_attachment_content_type :csv_file, #content_type: /.*\z/
 	validates_attachment :csv_file, presence: true, content_type: { content_type: "text/csv" }, size: { in: 0..10.kilobytes }
 

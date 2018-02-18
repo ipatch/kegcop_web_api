@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151017161741) do
+ActiveRecord::Schema.define(version: 20151017160948) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,11 +39,10 @@ ActiveRecord::Schema.define(version: 20151017161741) do
   add_index "api_keys", ["device_token"], name: "index_api_keys_on_device_token", unique: true, using: :btree
 
   create_table "csv_files", force: :cascade do |t|
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
-    t.string   "csv_file_id"
-    t.string   "csv_file_filename"
+    t.string   "csv_file_file_name"
     t.string   "csv_file_content_type"
+    t.integer  "csv_file_file_size"
+    t.datetime "csv_file_updated_at"
   end
 
   create_table "events", force: :cascade do |t|

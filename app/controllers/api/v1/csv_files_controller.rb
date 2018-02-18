@@ -6,7 +6,9 @@ class API::V1::CsvFilesController < ApplicationController
   respond_to :html, :json
 
   def index
-    render json: CsvFile.all
+    # render json: CsvFile.all
+    # render json: @csv_file = CsvFile.all
+    render json: @csv_file = CsvFile.order('created_at')
   end
 
   def show
@@ -163,6 +165,7 @@ class API::V1::CsvFilesController < ApplicationController
 
   private
     def csv_file_params
-      params.permit(:csv_file, :remote_csv_file_url)
+      # params.permit(:csv_file)
+      params.require(:csv_file).permit(:csv_file)
     end
 end
