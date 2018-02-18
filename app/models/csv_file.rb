@@ -1,9 +1,15 @@
 class CsvFile < ActiveRecord::Base
 
-validate :csv_size_validation, :if => "csv_file"
+	# paperclip
+	has_attached_file :csv_file, default_url: "/public/system/uploads/missing.csv"
+	# validates_attachment_content_type :csv_file, #content_type: /.*\z/
+	validates_attachment :csv_file, presence: true, content_type: { content_type: "text/csv" }, size: { in: 0..10.kilobytes }
+
+	validate :csv_size_validation, :if => "csv_file"
 	# http://ryanbigg.com/2009/04/how-rails-works-2-mime-types-respond_to/
-	attachment :csv_file, extension: "csv"
-	attachment :csv_file, content_type: "text/csv"
+	
+	# refile
+	# attachment :csv_file, extension: "csv", content_type: "text/csv"
 
 	private
 

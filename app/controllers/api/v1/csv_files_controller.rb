@@ -65,13 +65,13 @@ class API::V1::CsvFilesController < ApplicationController
 
     @csv_file = CsvFile.find_by_id(params[:id])
 
-    csv_file_download_path = @csv_file.csv_file_url
+    # csv_file_download_path = @csv_file.csv_file_url
 
     file_id = CsvFile.find(params[:id])
 
     # download = CsvFile.find(params[:id])
 
-    path = open("#{csv_file_download_path}" + "#{file_id}")
+    # path = open("#{csv_file_download_path}" + "#{file_id}")
     
 
     # path = open("#{Rails.root}/public" + "#{download}" + "#{Refile.attachment_url}")
