@@ -8,7 +8,8 @@ class API::V1::CsvFilesController < ApplicationController
   def index
     # render json: CsvFile.all
     # render json: @csv_file = CsvFile.all
-    render json: @csv_file = CsvFile.order('created_at')
+    # render json: @csv_file = CsvFile.order('created_at')
+    render json: CsvFile.all
   end
 
   def show
