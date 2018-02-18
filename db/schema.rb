@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(version: 20151017160948) do
     t.string   "csv_file_content_type"
     t.integer  "csv_file_file_size"
     t.datetime "csv_file_updated_at"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
   end
 
   create_table "events", force: :cascade do |t|

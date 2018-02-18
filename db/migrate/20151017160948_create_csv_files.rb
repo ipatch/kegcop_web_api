@@ -4,6 +4,7 @@ class CreateCsvFiles < ActiveRecord::Migration
     end
     change_table :csv_files do |t|
       t.attachment :csv_file
+      t.timestamps null: false
     end
   end
 
