@@ -36,5 +36,6 @@ Rails.application.routes.draw do
   resources :static_pages
   resources :bubbles
 
-  root to: 'users#new'
+  # root to: 'users#new'
+  root to: 'bubbles#index'
 end

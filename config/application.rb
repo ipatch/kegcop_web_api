@@ -50,5 +50,10 @@ module KegCopWebApi
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
+    # NOTE: to prevent
+    #... NoMethodError (undefined method `flash' for #<ActionDispatch::
+    config.middleware.use ActionDispatch::Flash
+
+
   end
 end
