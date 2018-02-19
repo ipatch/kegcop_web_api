@@ -6,6 +6,7 @@
 - Ruby 2.3.1
 - Ngnix 1.10.3
 - Puma 3.11.2
+- JS Runtime: Node.js (V8)
 
 ##  System dependencies
 - Postgres
