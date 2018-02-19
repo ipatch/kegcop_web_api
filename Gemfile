@@ -7,45 +7,16 @@ ruby "2.3.1"
 gem 'rails', '~> 4.2.10'
 gem 'pg', '~> 0.20.0'
 
-# added per "RESTful Rails Development"
-gem 'rails-api', '~> 0.4.1'
-
-###
-# NOTE: the below gem was giving me all sorts of nasty
-# ...build errors when bundling
-###
-# added per "RESTful Rails Development"
-# gem 'activerecord-postgis-adapter', '~> 5.2'
-# gem 'activerecord-postgis-adapter', '~> 4.1', '>= 4.1.1'
-
-# add gem sqlite3 for travis-ci.org support
-# gem 'sqlite3'
-
 # rails ~ 4.2.1 extracted the 'respond_to' feature into a gem
 gem 'responders', '~> 2.4'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
-# Use CoffeeScript for .js.coffee assets and views
-# removed 'coffe-rails' per this guide,
-# https://dockyard.com/blog/2014/05/07/building-an-ember-app-with-rails-part-1
-
-gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
-
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.2.4'
-# gem for parsing JSON
-gem 'oj', '~> 2.10.4'
 
 #API - Serializer for JSON
 gem 'active_model_serializers', '~> 0.10.7'
-
-# gem for handling file uploads within a rails app
-# gem 'refile', '~> 0.6.2', require: "refile/rails"
-# gem 'refile-mini_magick', '~> 0.2.0', :git => 'git@github.com:refile/refile-mini_magick.git'
-#gem 'mini_magick', '~> 3.7.0'
 
 # gem for managing file uploads
 gem 'paperclip', '~> 5.2.1'
@@ -61,9 +32,6 @@ gem 'therubyracer', '~> 0.12.3'
 
 # a gem that brings up HTTP status code
 gem 'cheat', '~> 1.3', '>= 1.3.3'
-
-# add gem to support contact form
-# gem 'active_attr', '~> 0.10.2'
 
 # Add bootstrap to project
 gem 'bootstrap-sass', '~> 3.3.6'
@@ -81,18 +49,14 @@ group :test do
 	gem 'ffaker', '~> 2.8', '>= 2.8.1'
 end
 
-gem 'geocoder', '~> 1.2.5'
-
 gem 'pry', '~> 0.11.3', group: :development
 
-# group :development do
-    gem 'capistrano', '~> 3.10', '>= 3.10.1'
-    gem 'capistrano-rvm', '~> 0.1.2'
-    gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
-    gem 'capistrano-bundler', '~> 1.3'
-    gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
-    gem 'capistrano3-nginx', '~> 2.0'
-# end
+gem 'capistrano', '~> 3.10', '>= 3.10.1'
+gem 'capistrano-rvm', '~> 0.1.2'
+gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
+gem 'capistrano-bundler', '~> 1.3'
+gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
+gem 'capistrano3-nginx', '~> 2.0'
 
 group :production do
   gem 'puma', '~> 3.11', '>= 3.11.2'
