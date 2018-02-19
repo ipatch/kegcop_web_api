@@ -1,5 +1,0 @@
-<% if @user_saved %>
-	$('#modal-window').html("<%= render partial: 'layouts/tos' %>");
-<% else %>
-	$('#new_user').find('#user_email').before("<%= render partial: 'errors'%>");
-<% end %>
