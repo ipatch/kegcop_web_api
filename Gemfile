@@ -38,7 +38,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 
 # add support for the JavaScript library D3
-gem 'd3_rails', '~> 4.1', '>= 4.1.1'
+# gem 'd3_rails', '~> 4.1', '>= 4.1.1'
 
 group :test do
 	gem 'rspec', '~> 3.7.0'
