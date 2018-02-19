@@ -53,7 +53,5 @@ module KegCopWebApi
     # NOTE: to prevent
     #... NoMethodError (undefined method `flash' for #<ActionDispatch::
     config.middleware.use ActionDispatch::Flash
-
-
   end
 end
