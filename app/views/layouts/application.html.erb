@@ -9,11 +9,14 @@
   <body>
     <div class="wrapper">
       <%= yield %>
+      <%= javascript_include_tag "application" %>
       <%= javascript_include_tag "beer-background" %>
       <%= javascript_include_tag "bubbles" %>
+      
       <% if Rails.env.production? %> 
         <%= javascript_include_tag "google-analytics" %>
       <% end %>
+      
     </div>
   </body>
 </html>

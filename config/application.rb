@@ -59,5 +59,8 @@ module KegCopWebApi
     config.generators do |g|
       g.javascript_engine :js
     end
+
+    # add additional paths for public/assets
+    config.assets.paths << "#{Rails.root}/assets/javascripts"
   end
 end
