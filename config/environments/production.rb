@@ -24,7 +24,12 @@ Rails.application.configure do
   config.serve_static_files = true # <= rails 4.x
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
+  # config.assets.js_compressor = :uglifier
+  ###
+  # ES6 support for .js assets
+  ###
+  config.assets.js_compressor = Uglifier.new(harmony: true)
+
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = true
