@@ -11,150 +11,6 @@
  * file per style scope.
  */
 
- #user_header {
-	text-align:center;
-}
-
-/* the below line fixes the content from being pushed underneath the header */
-body {
-	padding-top: 65px;
-}
-
-/* navbar coloring */
-.navbar-inverse .navbar-inner {
-    background-color: #ff0000;
-    background-image: linear-gradient(to bottom, #222, #111);
-    background-repeat: repeat-x;
-    border-color: #252525;
-}
-
-.navbar navbar-default {
-	background-color: #ff0000;
-}
-
-/* the below line didn't change anything */
-.navbar {
-	color: #ff0000;
-}
-
-/* change color of links in navbar */
-.navbar .nav > li > a {
-    color:  #d7af72;
-}
-
-/* the below didn't change anything */
-.navbar-container {
-		background-color: #ff0000;
-    	border-color: #E7E7E7;
-}
-
-.navbar .nav > .navbar-brand > a {
-	color: #ff0000;
-}
-
-.navbar-brand {
-	color: #ff0000;
-}
-
-.navbar-brand a{
-	color: #ff0000;
-}
-
-.brand {
-	color: #ff0000;
-}
-
-/* changes all the colors of navbar links / brand link */
-.navbar-inverse .brand, .navbar-inverse .nav > li > a {
-	color: #d7af72;
-}
-
-/* change color of navbar links - hover */
-.navbar-inverse, .navbar-inverse .nav > li > a:hover {
-	color: #d3a459;
-}
-
-.brand:hover, .navbar-inverse .nav > li > a:hover, .navbar-inverse .brand:focus, .navbar-inverse .nav > li > a:focus {
-    color: #d3a459;
-}
-
-/* change color of navbar brand text - hover */
-.navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover, .navbar-inverse .brand:focus, .navbar-inverse .nav > li > a:focus {
-    color: #d3a459;
-}
-
-.navbar-inverse-inner {
-	background: #ff0000;
-	background-image: none;
-	background-repeat: repeat-x;
-	border-color: none;
-	filter: none;
-}
-
-input, textarea, {
-	background-color: #27221a;
-	color: #d3a459;
-}
-
-.field {
-
-	/*background-color: #27221a;
-	color: #d3a459;*/
-
-}
-
-input[type="text"], input[type="password"] {
-
-	background-color: #27221a;
-	color: #d3a459;
-	border: #ff0000;
-
-}
-
-input:focus {
-    /*border-color: rgba(82, 168, 236, 0.8);*/
-    border-color: #d3a459;
-    outline: 0px none;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
-}
-
-/* change color of place holder text */
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color:    #d3a459;
-    opacity:  1;
-}
-
-/* change color of textfield background */
-/*.field {
-	background-color: #ff0000;
-}*/
-
-/* link hover color #d3a459 */
-
-/* change color blue primary button */
-.btn-custom { 
-	background-color: hsl(0, 0%, 16%) !important; 
-	background-repeat: repeat-x; 
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5b5b5b", endColorstr="#282828"); 
-	background-image: -khtml-gradient(linear, left top, left bottom, from(#5b5b5b), to(#282828)); 
-	background-image: -moz-linear-gradient(top, #5b5b5b, #282828); 
-	background-image: -ms-linear-gradient(top, #5b5b5b, #282828); 
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5b5b5b), color-stop(100%, #282828)); 
-	background-image: -webkit-linear-gradient(top, #5b5b5b, #282828); 
-	background-image: -o-linear-gradient(top, #5b5b5b, #282828); 
-	background-image: linear-gradient(#5b5b5b, #282828); 
-	border-color: #282828 #282828 hsl(0, 0%, 11%); color: #fff !important; 
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33); -webkit-font-smoothing: antialiased; 
-}
-
-
-/* contact form */
-
-#contact_form {
-	text-align:center;
-}
-
-
 /* bubbles */
 #bubbles {
       position: relative;
@@ -175,17 +31,6 @@ input:focus {
     position: absolute;
     /*border: 5px solid red;*/
 }
-
-.field {
-	/*border: 5px solid red;*/
-}
-
-#container {
-	/*border: 5px solid purple;*/
-	width: 50%;
-	float: right;
-}
-
 .wrapper {
 	/*border: 5px solid purple;*/
 	/*float: right;*/
@@ -198,112 +43,16 @@ input:focus {
 
 @media(max-width:767px){
 
-	h1 { font-size:5em;
-	}
-
-
 }
 /* the below media query affects the iphone 5 in portrait */
 @media(min-width:768px){
 
-	h1 { 
-		font-size:5em;
-		color: #d7af72;
-		}
-	/* make the textfields bigger */
-	input[type=text], input[type=email], input[type=password] {
-		height: 3em !important;
-	}
-
-	/* navbar */
-	.navbar {
-	
-	}
-
-	/* title */
-	.navbar-default .navbar-brand {
-    
-    }
-
-    .navbar-inverse .navbar-brand {
-    	
-    	color: #d3a459;
-
-    }
-
-
-	.navbar-default {
-    	/*background-color: #f6e6cc;
-    	border-color: #E7E7E7;*/
-	}
-
-	.navbar-custom {
-		background-color: #f6e6cc;
-    	border-color: #E7E7E7;
-	}
-
-	.navbar-fixed-top {
-		/*background-color: #ff0000;*/
-	}
-
-	.navbar-inner {
-		background-color: #f6e6cc;
-    	border-color: #E7E7E7;
-	}
-
-	.navbar-inverse {
-		/*background-color: #ff0000;*/
-    	/*border-color: #E7E7E7;*/
-	}
-
-	.container {
-		/*background-color: #ff0000;*/
-		background-color: #27221a;
-    	border-color: #E7E7E7;
-	}
-
-	/* link */
-	.navbar-default .navbar-nav > li > a {
-    	color: #ff0000;
-    }
-
-    .navbar .nav > li > a {
-    	/*color:  #ff0000;*/
-    }
-
-    /* Sticky footer styles
-    ----------------------------------------------------*/
-    html {
-    	position: relative;
-    	min-height: 100%;
-    }
-
-    body {
-    	/* Margin bottom by footer height */
-    	margin-bottom: 60px;
-    }
-
-    .footer {
-    	position: absolute;
-    	bottom: 0;
-    	width: 100%;
-    	/* Set the fixed height of the footer here */
-    	height: 60px;
-    	background-color: #251300;
-    }
 
 }
 @media(min-width:992px){
 
-	h1 { 
-		font-size:5em;
-		color: #d7af72;
-		}
+
 }
 @media(min-width:1200px){
 
-	h1 { 
-		font-size:5em;
-		color: #d7af72;
-		}
 }
