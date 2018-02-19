@@ -53,5 +53,11 @@ module KegCopWebApi
     # NOTE: to prevent
     #... NoMethodError (undefined method `flash' for #<ActionDispatch::
     config.middleware.use ActionDispatch::Flash
+
+    # set the default JS engine to standard JS as opposed
+    #...to using coffee-script
+    config.generators do |g|
+      g.javascript_engine :js
+    end
   end
 end

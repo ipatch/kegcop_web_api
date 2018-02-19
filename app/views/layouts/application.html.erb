@@ -2,19 +2,17 @@
 <html>
   <head>
     <title>KegCop Web - an API for KegCop</title>
-    <%= stylesheet_link_tag    "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
-
+    <%= stylesheet_link_tag "application", :media => "all" %>
     <%= csrf_meta_tags %>
     <link href="<%= image_path("favicon.ico") %>" rel="shortcut icon" />
   </head>
   <body>
     <div class="wrapper">
       <%= yield %>
-      <%= render 'layouts/beer_background' %>
-      <%= render 'layouts/bubbles' %>
+      <%= javascript_include_tag "beer-background" %>
+      <%= javascript_include_tag "bubbles" %>
       <% if Rails.env.production? %> 
-        <%= render 'layouts/google_analytics' %>
+        <%= javascript_include_tag "google-analytics" %>
       <% end %>
     </div>
   </body>

@@ -6,15 +6,13 @@ ruby "2.3.1"
 
 gem 'rails', '~> 4.2.10'
 gem 'pg', '~> 0.20.0'
-gem 'coffee-rails', '~> 4.1.0'
+# gem 'coffee-rails', '~> 4.1.0'
 
 # rails ~ 4.2.1 extracted the 'respond_to' feature into a gem
 gem 'responders', '~> 2.4'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-
-# gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 
 #API - Serializer for JSON
 gem 'active_model_serializers', '~> 0.10.7'
@@ -30,12 +28,6 @@ gem 'bcrypt', '~> 3.1.7'
 
 # Include a JS Runtime environment to prevent erroneous errors
 gem 'therubyracer', '~> 0.12.3'
-
-# Add bootstrap to project
-# gem 'bootstrap-sass', '~> 3.3.6'
-# Use SCSS for stylesheets
-# gem 'sass-rails', '~> 5.0'
-# gem 'sprockets-rails', '~> 3.2', '>= 3.2.1'
 
 group :test do
 	gem 'rspec', '~> 3.7.0'
