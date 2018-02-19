@@ -1,4 +1,4 @@
-# app/controllers/v1/csv_files_ocontroller.rb
+# app/controllers/v1/csv_files_controller.rb
 module V1
   class CsvFilesController < ApplicationController
 
