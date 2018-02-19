@@ -119,6 +119,7 @@ class API::V1::CsvFilesController < ApplicationController
   
   # POST /csv_files.json
   def create
+    # render text: csv_file_params
 		@csv_file = CsvFile.new(csv_file_params)
 
 		if @csv_file.save
@@ -166,9 +167,15 @@ class API::V1::CsvFilesController < ApplicationController
 
   private
     def csv_file_params
+      params.require(:csv_file).permit(:id, :csv_file_file_name, :csv_file_content_type, :csv_file_file_size)
+      # params.require(:csv_file)
       # params.permit(:csv_file)
       # params.require(:article).permit(:title, :text, :slug, :meta_description)
       # params.require(:csv_file).permit(:csv_file)
-      params.require(:csv_file)
+      # params.permit(csv_files_attributes: [csv_file:
+    # [:csv_file_file_name, :csv_file_content_type, :tempfile, :csv_file_file_size]
+      # ])
+      # params.permit(:csv_file, :csv_file_content_type, :csv_file_file_name, :csv_file_file_size)
+      # params.require(:csv_file).permit(:csv_file)
     end
 end

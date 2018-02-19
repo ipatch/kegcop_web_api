@@ -2,10 +2,10 @@ class CsvFile < ActiveRecord::Base
 
 	# paperclip
 	has_attached_file :csv_file
-	# validates_attachment_content_type :csv_file, #content_type: /.*\z/
-	validates_attachment :csv_file, presence: true, content_type: { content_type: "text/csv" }, size: { in: 0..10.kilobytes }
+	# validates_attachment :csv_file, presence: true, size: { in: 0..10.kilobytes }
+	validates_attachment :csv_file, content_type: { content_type: ["application/octet-stream", "text/csv"] }
 
-	validate :csv_size_validation, :if => "csv_file"
+	# validate :csv_size_validation, :if => "csv_file"
 	# http://ryanbigg.com/2009/04/how-rails-works-2-mime-types-respond_to/
 	
 	# refile
