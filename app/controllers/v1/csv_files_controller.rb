@@ -38,10 +38,6 @@ module V1
       head :no_content
     end
 
-    # def json_response(object, status = :ok)
-    #   render json: object, status: status
-    # end
-
     private
       def csv_file_params
         # whitelist params
@@ -51,8 +47,5 @@ module V1
       def set_csv_file
         @csv_file = CsvFile.find(params[:id])
       end
-      # def csv_file_params
-      #   params.permit(:csv_file)
-      # end
   end
 end
