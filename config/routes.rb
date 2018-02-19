@@ -18,6 +18,8 @@ Rails.application.routes.draw do
       resources :kegerators, param: :device_id
       resources :register
       resources :csv_files
+      # map.upload "/upload(.:format)", :controller => "csv_files", :action => "upload"
+      match ':csv_files/:upload/', via: [:post]
     end
   end
 

@@ -5,12 +5,6 @@ class CsvFile < ActiveRecord::Base
 	# validates_attachment :csv_file, presence: true, size: { in: 0..10.kilobytes }
 	validates_attachment :csv_file, content_type: { content_type: ["application/octet-stream", "text/csv"] }
 
-	# validate :csv_size_validation, :if => "csv_file"
-	# http://ryanbigg.com/2009/04/how-rails-works-2-mime-types-respond_to/
-	
-	# refile
-	# attachment :csv_file, extension: "csv", content_type: "text/csv"
-
 	private
 
 		def file_extension_validation
