@@ -167,6 +167,8 @@ class API::V1::CsvFilesController < ApplicationController
   private
     def csv_file_params
       # params.permit(:csv_file)
-      params.require(:csv_file).permit(:csv_file)
+      # params.require(:article).permit(:title, :text, :slug, :meta_description)
+      # params.require(:csv_file).permit(:csv_file)
+      params.require(:csv_file)
     end
 end
