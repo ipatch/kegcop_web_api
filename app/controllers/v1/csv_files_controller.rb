@@ -15,10 +15,12 @@ module V1
 
     # POST /csv_files
     def create
-      csv_file = CsvFile.new
-      csv_file.csv_file = params[:csv_file]
-      csv_file.save
-      render :text => "Ok"
+      @csv_file = CsvFile.create!(csv_file_params)
+      json_response(@csv_file, :created)
+      # csv_file = CsvFile.new
+      # csv_file.csv_file = params[:csv_file]
+      # csv_file.save
+      # render :text => "Ok"
     end
 
     # GET /csv_files/:id
@@ -41,7 +43,12 @@ module V1
     private
       def csv_file_params
         # whitelist params
-        params.permit()
+        params.permit(
+          :csv_file_file_name,
+          :csv_file_content_type,
+          :csv_file_file_size,
+          :csv_file_updated_at
+        )
       end
 
       def set_csv_file
