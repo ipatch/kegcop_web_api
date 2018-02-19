@@ -3,24 +3,19 @@
   <head>
     <title>KegCop Web - an API for KegCop</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application" %>
 
     <%= csrf_meta_tags %>
     <link href="<%= image_path("favicon.ico") %>" rel="shortcut icon" />
   </head>
   <body>
-  <div class="wrapper">
-    <%= render 'layouts/nav' unless @disable_nav %>
-
+    <div class="wrapper">
       <%= yield %>
-
+      <%= render 'layouts/beer_background' %>
       <%= render 'layouts/bubbles' %>
-
-      <%= render 'layouts/footer' unless @disable_footer %>
-    
-
-  <%= render 'layouts/google_analytics' %>
-  <%= render 'layouts/beer_background' %>
-  </div>
+      <% if Rails.env.production? %> 
+        <%= render 'layouts/google_analytics' %>
+      <% end %>
+    </div>
   </body>
 </html>
