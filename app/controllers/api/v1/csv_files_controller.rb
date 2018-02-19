@@ -10,7 +10,7 @@ class API::V1::CsvFilesController < ApplicationController
   end
 
   # POST /csv_files.json
-  def upload
+  def create
     csv_file = CsvFile.new
     csv_file.csv_file = params[:csv_file]
     csv_file.save

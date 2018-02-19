@@ -17,8 +17,9 @@ Rails.application.routes.draw do
       resources :please_work
       resources :kegerators, param: :device_id
       resources :register
-      resources :csv_files, do
-        match "/upload" => "csv_files#upload", :as => :upload
+      resources :csv_files do
+        # match "/upload" => "csv_files#upload", :as => :upload
+        # post 'upload', to: 'csv_files#create'
       end
       # map.upload "/upload(.:format)", :controller => "csv_files", :action => "upload"
       # match ':controller/:action/:id', via: [:post]
