@@ -44,6 +44,7 @@ module V1
       def csv_file_params
         # whitelist params
         params.permit(
+          :csv_file,
           :csv_file_file_name,
           :csv_file_content_type,
           :csv_file_file_size,
