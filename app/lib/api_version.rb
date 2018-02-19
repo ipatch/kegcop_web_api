@@ -1,6 +1,6 @@
 # app/lib/api_version.rb
 
-class api_version
+class ApiVersion
   attr_reader :version, :default
 
   def initialize(version, default = false)
