@@ -6,10 +6,8 @@ Rails.application.routes.draw do
   #...first created -> highest priority.
   # `rake routes`
 
-  # Api definition
-    # the below line specifies JSON as the default API format
-  # namespace :api, defaults: {format: 'json'} do
-    # use scpoe to remove the version number from the API when making a request
+  # use scpoe to remove the version number from the API when making a request
+  # namespace the controllers without affecting the URI
   scope module: :v1, constraints: ApiVersion.new('v1',true) do
     resources :csv_files
   end
