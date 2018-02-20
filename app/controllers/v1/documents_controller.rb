@@ -4,10 +4,12 @@ module V1
 
     skip_before_action :verify_authenticity_token
 
-
+    respond_to :html, :json
+    
     # GET /documents
     def index
       @documents = Document.all
+      json_response(@documents)
     end
 
     # GET /documents/1
