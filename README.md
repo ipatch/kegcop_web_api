@@ -10,6 +10,7 @@
 
 ##  System dependencies
 - Postgres
+- [ImageMagick](https://github.com/ImageMagick/ImageMagick)
 
 ## Working with `curl`
 

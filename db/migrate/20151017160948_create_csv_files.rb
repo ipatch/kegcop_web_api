@@ -9,7 +9,7 @@ class CreateCsvFiles < ActiveRecord::Migration
   end
 
   def self.down
-    drop_attached_file :csv_files, :csv_file
+    remove_attachment :csv_files, :csv_file
     drop_table :csv_files
   end
 end

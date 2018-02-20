@@ -5,4 +5,6 @@
 # Useful Link
 # https://github.com/thoughtbot/paperclip/wiki/Attachment-downloaded-from-a-URL
 
-Paperclip::UriAdpater.register
+Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:filename'
+
+# Paperclip::UriAdpater.register
