@@ -39,7 +39,6 @@ module V1
       @document = Document.new(document_params)
 
       if @document.save
-        # redirect_to @document, notice: 'Document was successfully created.'
         json_response(@document, :created)
       else
         render :new
