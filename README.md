@@ -14,32 +14,34 @@
 
 ## Working with `curl`
 
-To test the following csv_files endpoint in this application
+> [httpie](https://github.com/jakubroztocil/httpie) is a sensible alternative to using `curl`
+
+To test the following `documents` endpoint in this application
 ```fish
-curl -I localhost:3000/api/csv_files
+curl -I localhost:3000/documents
 ```
-The above `curl` request will print just the headers for the csv_files endpoint.
+The above `curl` request will print just the headers for the `documents` endpoint.
 
 The `-X` flag specifies the command request, ie. `GET`, `POST`, `DELETE`, `PATCH`.
 
 To execute a `GET` request on an endpoint
 ```fish
-curl http://localhost:3000/api/csv_files
+curl http://localhost:3000/documents
 ```
 
 To force a `JSON` response from an endpoint
 ```fish
-curl --header "Accept:application/json" http://localhost:3000/api/csv_files
+curl --header "Accept:application/json" http://localhost:3000/documents
 ```
 
 To include the headers in the response, use `-i` flag.
 
 To test sending a `csv` file to the csv_files endpoint
 ```fish
-curl -X POST -F "csv_file=@/path/to/mr-fancy-pants.csv" localhost:3000/api/csv_files
+curl -X POST -F "csv_file=@/path/to/mr-fancy-pants.csv" localhost:3000/documents
 ```
 
-The above `curl` command should successfully send a file to csv_files endpoint.
+The above `curl` command should successfully send a file to the `documents` endpoint.
 
 ## TODO
 - [x] ~~flesh out README~~
