@@ -10,9 +10,8 @@ Rails.application.routes.draw do
   # use scpoe to remove the version number from the API when making a request
   # namespace the controllers without affecting the URI
   scope module: :v1, constraints: ApiVersion.new('v1',true) do
-    resources :documents do
-      get 'download'
-    end
+    resources :documents
+    get 'documents/download/:id', to: 'documents#download'
   end
 
   root 'bubbles#index'
