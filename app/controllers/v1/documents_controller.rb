@@ -64,6 +64,14 @@ module V1
       end
     end
 
+    # GET /documents/download
+    def download
+      responds_to do |format|
+        msg = { status: "ok", message: "Your document downloaded"}
+        format.json { render json: msg }
+      end
+    end
+
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_document
