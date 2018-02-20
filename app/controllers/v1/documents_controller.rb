@@ -53,6 +53,6 @@ class DocumentsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def document_params
-      params.require(:document).permit(:name)
+      params.require(:document).permit(:name, :csv_file)
     end
 end
