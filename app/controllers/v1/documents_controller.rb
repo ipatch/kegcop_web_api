@@ -2,6 +2,9 @@ module V1
   class DocumentsController < ApplicationController
     before_action :set_document, only: [:show, :edit, :update, :destroy]
 
+    skip_before_action :verify_authenticity_token
+
+
     # GET /documents
     def index
       @documents = Document.all
@@ -54,7 +57,7 @@ module V1
 
       # Only allow a trusted parameter "white list" through.
       def document_params
-        params.require(:document).permit(:name, :csv_file)
+        params.permit(:csv_file)
       end
   end
 end
