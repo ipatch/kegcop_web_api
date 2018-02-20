@@ -34,7 +34,7 @@ set :stage,         :production
 set :pty,           true
 
 append :linked_files,  "config/secrets.yml"
-append :linked_dirs, "bin", "tmp", "vendor/bundle", "public/system"
+append :linked_dirs, "bin", "tmp", "vendor/bundle", "public/uploads"
 set :bundle_path, -> { 'vendor/bundle' }
 
 # Puma Settings

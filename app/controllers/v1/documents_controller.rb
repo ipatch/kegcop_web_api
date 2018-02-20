@@ -23,6 +23,15 @@ module V1
 
     # GET /documents/1/edit
     def edit
+      respond_to do |format|
+        format.html {
+          render html:'edit'
+        }
+        format.json {
+          json_response(@document)
+          # render json:@csv_file.as_json(only: [:id])
+        }
+      end
     end
 
     # POST /documents
