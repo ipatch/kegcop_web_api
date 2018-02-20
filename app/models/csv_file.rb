@@ -3,7 +3,7 @@ class CsvFile < ActiveRecord::Base
 	# paperclip
 	has_attached_file :csv_file
 	# validates_attachment :csv_file, presence: true, size: { in: 0..10.kilobytes }
-	validates_attachment :csv_file, content_type: { content_type: ["application/octet-stream", "text/csv"] }
+	validates_attachment :csv_file, content_type: { content_type: "text/csv" }
 
 	private
 

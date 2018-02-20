@@ -7,4 +7,5 @@
 
 Paperclip::Attachment.default_options[:path] = '/:class/:attachment/:filename'
 
-# Paperclip::UriAdpater.register
+# Paperclip::UriAdpater.register <= WRONG
+Paperclip::DataUriAdapter.register
