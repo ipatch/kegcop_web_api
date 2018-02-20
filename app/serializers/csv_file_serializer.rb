@@ -1,11 +1,6 @@
-class CsvFileSerializer < ActiveModel::Serializer
-  # # attributes  :id, 
-  #             :csv_file_id, 
-  #             :csv_file_filename, 
-  #             :csv_file_content_type
-  
+# app/serializers/csv_file_serializer.rb
 
-  # def file_path
-  #   Refile.attachment_url(object, :file, filename: object.csv_file_filename)
-  # end
+class CsvFileSerializer < ActiveModel::Serializer
+  # attributes to be serialized
+  attributes :id, :csv_file, :csv_file_file_name, :csv_file_content_type, :csv_file_file_size, :created_at, :updated_at
 end
