@@ -11,7 +11,7 @@ gem 'responders', '~> 2.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 #API - Serializer for JSON
-gem 'active_model_serializers', '~> 0.10.7'
+# gem 'active_model_serializers', '~> 0.10.7'
 # gem for managing file uploads
 gem 'paperclip', '~> 5.2.1'
 # bundle exec rake doc:rails generates the API under doc/api.

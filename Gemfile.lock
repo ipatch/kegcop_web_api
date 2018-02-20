@@ -20,11 +20,6 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.3)
-    active_model_serializers (0.10.7)
-      actionpack (>= 4.1, < 6)
-      activemodel (>= 4.1, < 6)
-      case_transform (>= 0.2)
-      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
     activejob (4.2.10)
       activesupport (= 4.2.10)
       globalid (>= 0.3.0)
@@ -65,8 +60,6 @@ GEM
       capistrano (~> 3.7)
       capistrano-bundler
       puma (~> 3.4)
-    case_transform (0.2)
-      activesupport
     climate_control (0.2.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
@@ -84,7 +77,6 @@ GEM
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     json (1.8.6)
-    jsonapi-renderer (0.2.0)
     loofah (2.2.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -185,7 +177,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_model_serializers (~> 0.10.7)
   bcrypt (~> 3.1.7)
   capistrano (~> 3.10, >= 3.10.1)
   capistrano-bundler (~> 1.3)
