@@ -11,18 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151017160948) do
+ActiveRecord::Schema.define(version: 20180220035321) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "csv_files", force: :cascade do |t|
+  create_table "documents", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
     t.string   "csv_file_file_name"
     t.string   "csv_file_content_type"
     t.integer  "csv_file_file_size"
     t.datetime "csv_file_updated_at"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
   end
 
 end

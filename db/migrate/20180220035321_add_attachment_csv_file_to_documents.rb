@@ -8,4 +8,4 @@ class AddAttachmentCsvFileToDocuments < ActiveRecord::Migration
   def self.down
     remove_attachment :documents, :csv_file
   end
-end
+end  
