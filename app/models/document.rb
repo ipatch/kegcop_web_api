@@ -4,6 +4,6 @@ class Document < ActiveRecord::Base
     path: "#{Rails.root}/public/uploads/system/:basename.:extension",
     url: "#{Rails.root}/public/uploads/system/:basename.:extension"
 
-  validates_attachment :csv_file, presence: true
-  do_not_validate_attachment_file_type :csv_file
+  validates_attachment :csv_file, presence: true, size: { in: 0..10.kilobytes }, content_type: { content_type: ['text/csv', 'text/plain'] }
+  # do_not_validate_attachment_file_type :csv_file
 end
