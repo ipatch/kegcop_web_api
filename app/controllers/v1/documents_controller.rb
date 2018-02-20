@@ -1,6 +1,6 @@
 module V1
   class DocumentsController < ApplicationController
-    before_action :set_document, only: [:show, :edit, :update, :destroy]
+    before_action :set_document, only: [:show, :edit, :update, :destroy, download]
 
     skip_before_action :verify_authenticity_token
 
@@ -66,7 +66,8 @@ module V1
 
     # GET /documents/download
     def download
-      responds_to do |format|
+      send_file @document
+      respond_to do |format|
         msg = { status: "ok", message: "Your document downloaded"}
         format.json { render json: msg }
       end
