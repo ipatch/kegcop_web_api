@@ -49,7 +49,8 @@ module V1
     # PATCH/PUT /documents/1
     def update
       if @document.update(document_params)
-        redirect_to @document, notice: 'Document was successfully updated.'
+        # redirect_to @document, notice: 'Document was successfully updated.'
+        head :no_content
       else
         render :edit
       end
@@ -58,7 +59,10 @@ module V1
     # DELETE /documents/1
     def destroy
       @document.destroy
-      redirect_to documents_url, notice: 'Document was successfully destroyed.'
+      respond_to do |format|
+        msg = { status: "ok", message: "Your document has been deleted"}
+        format.json { render json: msg }
+      end
     end
 
     private
