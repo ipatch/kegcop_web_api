@@ -14,5 +14,6 @@ Rails.application.routes.draw do
     get 'documents/download/:id', to: 'documents#download'
   end
 
+  get "bubbles", to: "bubbles#index"
   root 'bubbles#index'
 end
