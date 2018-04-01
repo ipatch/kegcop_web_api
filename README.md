@@ -9,6 +9,7 @@
 - JS Runtime: Node.js (V8)
 
 ##  System dependencies
+
 - Postgres
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick)
 
@@ -17,19 +18,23 @@
 > [httpie](https://github.com/jakubroztocil/httpie) is a sensible alternative to using `curl`
 
 To test the following `documents` endpoint in this application
+
 ```fish
 curl -I localhost:3000/documents
 ```
+
 The above `curl` request will print just the headers for the `documents` endpoint.
 
 The `-X` flag specifies the command request, ie. `GET`, `POST`, `DELETE`, `PATCH`.
 
 To execute a `GET` request on an endpoint
+
 ```fish
 curl http://localhost:3000/documents
 ```
 
 To force a `JSON` response from an endpoint
+
 ```fish
 curl --header "Accept:application/json" http://localhost:3000/documents
 ```
@@ -37,11 +42,16 @@ curl --header "Accept:application/json" http://localhost:3000/documents
 To include the headers in the response, use `-i` flag.
 
 To test sending a `csv` file to the csv_files endpoint
+
 ```fish
 curl -X POST -F "csv_file=@/path/to/mr-fancy-pants.csv" localhost:3000/documents
 ```
 
 The above `curl` command should successfully send a file to the `documents` endpoint.
+
+## Useful Links
+
+- [How to Import CSV files using rails](http://www.mattmorgante.com/technology/csv)
 
 ## TODO
 - [x] ~~flesh out README~~
