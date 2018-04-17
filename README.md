@@ -53,6 +53,6 @@ The above `curl` command should successfully send a file to the `documents` endp
 
 - [How to Import CSV files using rails](http://www.mattmorgante.com/technology/csv)
 
-## TODO
+## TODOs
 - [x] ~~flesh out README~~
 
