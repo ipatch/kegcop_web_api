@@ -6,18 +6,12 @@ ruby "2.3.1"
 
 gem 'rails', '~> 4.2.10'
 gem 'pg', '~> 0.20.0'
-# rails ~ 4.2.1 extracted the 'respond_to' feature into a gem
-gem 'responders', '~> 2.4'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-#API - Serializer for JSON
-# gem 'active_model_serializers', '~> 0.10.7'
-# gem for managing file uploads
-gem 'paperclip', '~> 5.2.1'
+gem 'responders', '~> 2.4' # rails ~ 4.2.1 seperated `respond_to` to a gem
+gem 'uglifier', '>= 1.3.0' # compress JS and CSS assets
+gem 'paperclip', '~> 5.2.1' # managing file uploads
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-# Use ActiveModel has_secure_password
-gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7' # has_secure_password
 
 group :test do
 	gem 'rspec', '~> 3.7.0'
