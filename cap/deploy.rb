@@ -23,7 +23,6 @@ SSHKit.config.command_map[:rake] = "#{fetch(:default_env)[:rvm_bin_path]}/rvm ru
 set :user, "deploy"
 set :use_sudo, false 
 set :deploy_to, "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
-# set :use_sudo,        false
 set :current_directory, "/home/#{fetch(:user)}/apps/#{fetch(:application)}/current"
 
 set :branch,           'master'
@@ -111,7 +110,6 @@ namespace :puma do
     on roles(:app) do
       execute "mkdir #{shared_path}/tmp/sockets -p"
       execute "mkdir #{shared_path}/tmp/pids -p"
-      # execute "ln -sf /home/#{fetch(:user)}/apps/#{fetch(:application)}/current /home/#{fetch(:user)}/apps/#{fetch(:application)}/current "
     end
   end
 end
