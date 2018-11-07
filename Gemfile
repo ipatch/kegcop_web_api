@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 # kegcop_web_api - rails app
 
-ruby "2.3.1"
+ruby "2.5.3"
 
 gem 'rails', '~> 4.2.10'
-gem 'pg', '~> 0.20.0'
+gem 'pg', '~> 0.21.0'
 gem 'responders', '~> 2.4' # rails ~ 4.2.1 seperated `respond_to` to a gem
 gem 'uglifier', '>= 1.3.0' # compress JS and CSS assets
 gem 'paperclip', '~> 5.2.1' # managing file uploads
