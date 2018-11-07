@@ -5,13 +5,13 @@
 ###
 
 # config valid only for current version of Capistrano
-lock '3.10.1'
+lock '3.11.0'
 
 set :application,     'KegCopWebApi'
 set :local_user,      'deploy'
 set :repo_url,        'git@github.com:ipatch/kegcop_web_api'
 
-set :rvm_ruby_version, '2.3.1'
+set :rvm_ruby_version, '2.5.1'
 # TODO: see if `$PATH` env var can be used instead of
 #...explicitly defining all the paths.
 # NOTE: cap can't read env vars such `$PATH` from the local user 😡

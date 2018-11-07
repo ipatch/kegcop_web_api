@@ -14,20 +14,23 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7' # has_secure_password
 
 group :test do
-	gem 'rspec', '~> 3.7.0'
-	gem 'factory_girl', '~> 4.5.0'
-	gem 'shoulda-matchers', '~> 2.7.0'
-	gem 'ffaker', '~> 2.8', '>= 2.8.1'
+	gem 'rspec', '~> 3.8.0'
+	gem 'factory_girl', '~> 4.9.0'
+	gem 'shoulda-matchers', '~> 3.1.2'
+	# gem 'ffaker', '~> 2.8', '>= 2.8.1'
+  gem 'ffaker', '~> 2.10.0'
 end
 
-gem 'pry', '~> 0.11.3', group: :development
+# gem 'pry', '~> 0.11.3', group: :development
+gem 'pry', '~> 0.12.0', group: :development
 
 gem 'capistrano', '~> 3.10', '>= 3.10.1'
 gem 'capistrano-rvm', '~> 0.1.2'
-gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
-gem 'capistrano-bundler', '~> 1.3'
+# gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
+gem 'capistrano-rails', '~> 1.4'
+gem 'capistrano-bundler', '~> 1.4'
 gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
-gem 'capistrano3-nginx', '~> 2.0'
+gem 'capistrano3-nginx', '~> 3.0.1'
 
 group :production do
   gem 'puma', '~> 3.11', '>= 3.11.2'
