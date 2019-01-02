@@ -12,9 +12,9 @@
       <%= javascript_include_tag "application" %>
       <%= javascript_include_tag "beer-background" %>
       <%= javascript_include_tag "bubbles" %>
+      <%= render "shared/gtag" %>
 
       <% if Rails.env.production? %> 
-        <%- render "shared/gtag" %>
       <% end %>
 
     </div>
