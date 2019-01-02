@@ -14,8 +14,7 @@
       <%= javascript_include_tag "bubbles" %>
 
       <% if Rails.env.production? %> 
-        <%# <%= javascript_include_tag "gtag" %1> %>
-        <%= javascript_include_tag "google-analytics" %>
+        <%- render "shared/gtag" %>
       <% end %>
 
     </div>
