@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby "2.5.3"
 
-gem 'rails', '~> 4.2.11'
+gem 'rails', '~> 4.2.11.1'
 gem 'pg', '~> 0.21.0'
 gem 'responders', '~> 2.4' # rails ~ 4.2.1 seperated `respond_to` to a gem
 gem 'uglifier', '>= 1.3.0' # compress JS and CSS assets
@@ -33,5 +33,5 @@ gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
 gem 'capistrano3-nginx', '~> 3.0.1'
 
 group :production do
-  gem 'puma', '~> 3.11', '>= 3.11.2'
+  gem 'puma', '~> 3.12.0'
 end
