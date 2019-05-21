@@ -1,6 +1,6 @@
-# kegcop_web_api [![Build Status](https://travis-ci.org/ipatch/kegcop-web.svg?branch=master)](https://travis-ci.org/ipatch/kegcop-web)
+## kegcop_web_api [![Build Status](https://travis-ci.org/ipatch/kegcop-web.svg?branch=master)](https://travis-ci.org/ipatch/kegcop-web)
 
-> A rails app powering ⚡️ the API portion of [kegcop.chrisrjones.com](kegcop.chrisrjones.com)
+> A rails app powering ⚡️ the API portion of [kegcop.chrisrjones.com](http://kegcop.chrisrjones.com)
 
 <a id="stack"></a>
 
