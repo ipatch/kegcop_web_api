@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # kegcop_web_api - rails app
 
-ruby "2.5.3"
+ruby '2.6.3'
 
 gem 'rails', '~> 4.2.11.1'
 gem 'pg', '~> 0.21.0'
@@ -14,17 +14,17 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7' # has_secure_password
 
 group :test do
-	gem 'rspec', '~> 3.8.0'
-	gem 'factory_girl', '~> 4.9.0'
-	gem 'shoulda-matchers', '~> 3.1.2'
-	# gem 'ffaker', '~> 2.8', '>= 2.8.1'
+  gem 'factory_girl', '~> 4.9.0'
   gem 'ffaker', '~> 2.10.0'
+  gem 'rspec', '~> 3.8.0'
+  gem 'shoulda-matchers', '~> 3.1.2'
+  # gem 'ffaker', '~> 2.8', '>= 2.8.1'
 end
 
 # gem 'pry', '~> 0.11.3', group: :development
 gem 'pry', '~> 0.12.0', group: :development
 
-gem 'capistrano', '~> 3.10', '>= 3.10.1'
+gem 'capistrano', '~> 3.11.2', '>= 3.11.2'
 gem 'capistrano-rvm', '~> 0.1.2'
 # gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
 gem 'capistrano-rails', '~> 1.4'
