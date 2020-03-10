@@ -6,10 +6,25 @@
 
 ## Stack
 
-- Ruby 2.5.3
+- Ruby 2.6.3
 - Ngnix 1.10.3
-- Puma 3.11.2
+- Puma 3.12.4
 - JS Runtime: Node.js (V8)
+
+<a id="deployment"></a>
+
+## Deployment
+
+```shell
+echo "rvm use [RUBY_VERSION_DEFINED_FOR_THIS APP]"
+echo "as of March 4, 2020 👇"
+rvm ues 2.6.3
+ssh-agent
+ssh-add ~/.ssh/id_rsa
+cap production deploy
+```
+
+> Keep bundler ≤ 1.17.x in order to deploy a rails 4.2.x app
 
 <a id="system-deps"></a>
 
