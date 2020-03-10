@@ -24,7 +24,7 @@ end
 # gem 'pry', '~> 0.11.3', group: :development
 gem 'pry', '~> 0.12.0', group: :development
 
-gem 'capistrano', '~> 3.11.2', '>= 3.11.2'
+gem 'capistrano', '~> 3.12.0', '>= 3.12.0'
 gem 'capistrano-rvm', '~> 0.1.2'
 # gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
 gem 'capistrano-rails', '~> 1.4'
