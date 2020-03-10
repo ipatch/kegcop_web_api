@@ -33,5 +33,5 @@ gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
 gem 'capistrano3-nginx', '~> 3.0.1'
 
 group :production do
-  gem 'puma', '~> 3.12.2'
+  gem 'puma', '~> 3.12.4'
 end
