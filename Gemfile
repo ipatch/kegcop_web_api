@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 
 ruby '2.6.3'
 
-gem 'rails', '~> 4.2.11.1'
+gem 'rails', '~> 4.2.11.3'
 gem 'pg', '~> 0.21.0'
 gem 'responders', '~> 2.4' # rails ~ 4.2.1 seperated `respond_to` to a gem
 gem 'uglifier', '>= 1.3.0' # compress JS and CSS assets
