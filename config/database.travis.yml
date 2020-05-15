@@ -1,9 +1,0 @@
-# config/database.travis.yml
-
-postgresql: &postgresql
-  adapter: postgresql
-  username: web_user
-  password:
-  host: localhost
-  database: kegcop_web_api_<%= Rails.env %>
-  min_messages: ERROR
