@@ -2,18 +2,20 @@
 
 > A rails app powering ⚡️ the API portion of [kegcop.chrisrjones.com](http://kegcop.chrisrjones.com)
 
-<a id="stack"></a>
 
 ## Stack
+
+<a id="stack"></a>
 
 - Ruby 2.6.3
 - Ngnix 1.10.3
 - Puma 3.12.4
 - JS Runtime: Node.js (V8)
 
-<a id="deployment"></a>
 
 ## Deployment
+
+<a id="deployment"></a>
 
 ```shell
 echo "rvm use [RUBY_VERSION_DEFINED_FOR_THIS APP]"
@@ -33,9 +35,10 @@ cap production deploy
 - Postgres
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick)
 
-<a id="working-with-curl"></a>
 
 ## Working with `curl`
+
+<a id="working-with-curl"></a>
 
 > [httpie](https://github.com/jakubroztocil/httpie) is a sensible alternative to using `curl`
 
@@ -71,12 +74,14 @@ curl -X POST -F "csv_file=@/path/to/mr-fancy-pants.csv" localhost:3000/documents
 
 The above `curl` command should successfully send a file to the `documents` endpoint.
 
-<a id="useful-links"></a>
-
 ## Useful Links
+
+<a id="useful-links"></a>
 
 - [How to Import CSV files using rails](http://www.mattmorgante.com/technology/csv)
 
 ## TODOs
 
+- [ ] deploy app to heroku 
+- [ ] exp with ruby 2.6.5, and possibly upgrade app to use ruby 2.6.5
 - [x] ~~flesh out README~~

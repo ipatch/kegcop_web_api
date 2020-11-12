@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # kegcop_web_api - rails app
 
-ruby '2.6.3'
+ruby '2.6.6'
 
 gem 'rails', '~> 4.2.11.3'
 gem 'pg', '~> 0.21.0'
