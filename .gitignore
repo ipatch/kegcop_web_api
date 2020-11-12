@@ -31,7 +31,9 @@ pickle-email-*.html
 
 # Comment out these rules if your OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb
-config/secrets.yml
+
+# checkedin for heroku, use env vars to access secrets
+# config/secrets.yml
 
 # Environment normalization:
 /.bundle
@@ -67,3 +69,5 @@ scratchpad.txt
 # Ignore the compiled assets
 /public/assets/*
 /public/uploads/*
+
+.env

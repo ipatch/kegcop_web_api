@@ -28,6 +28,14 @@ cap production deploy
 
 > Keep bundler ≤ 1.17.x in order to deploy a rails 4.2.x app
 
+### / Deployment / heroku
+
+the below error will be rendered in a browser if a `secrets.yml` file is not present
+
+```
+An unhandled lowlevel error occurred. The application logs may have details.
+```
+
 <a id="system-deps"></a>
 
 ## System dependencies
@@ -82,6 +90,8 @@ The above `curl` command should successfully send a file to the `documents` endp
 
 ## TODOs
 
-- [ ] deploy app to heroku 
-- [ ] exp with ruby 2.6.5, and possibly upgrade app to use ruby 2.6.5
+<a id="todos"></a>
+
+- [x] ~~deploy app to heroku~~ 
+- [x] ~~exp with ruby 2.6.5, and possibly upgrade app to use ruby 2.6.5~~
 - [x] ~~flesh out README~~
