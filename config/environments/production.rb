@@ -25,7 +25,8 @@ Rails.application.configure do
   #
   #
   # heroku, ref: https://devcenter.heroku.com/articles/rails-asset-pipeline#compile-set-to-true-in-production
-  config.serve_static_files = false # <= rails 4.x
+  # NOTE: doh
+  config.serve_static_files = true # <= rails 4.x
 
 
   # Compress JavaScripts and CSS.
@@ -36,7 +37,8 @@ Rails.application.configure do
   config.assets.js_compressor = Uglifier.new(harmony: true)
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = true
+  # heroku, https://devcenter.heroku.com/articles/rails-asset-pipeline#compile-set-to-true-in-production
+  config.assets.compile = false
 
   # Generate digests for assets URLs.
   config.assets.digest = true
