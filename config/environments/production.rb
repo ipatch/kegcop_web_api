@@ -21,7 +21,12 @@ Rails.application.configure do
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
   #config.serve_static_assets = true # <= used for rails 3.x
-  config.serve_static_files = true # <= rails 4.x
+  # config.serve_static_files = true # <= rails 4.x
+  #
+  #
+  # heroku, ref: https://devcenter.heroku.com/articles/rails-asset-pipeline#compile-set-to-true-in-production
+  config.serve_static_files = false # <= rails 4.x
+
 
   # Compress JavaScripts and CSS.
   # config.assets.js_compressor = :uglifier
