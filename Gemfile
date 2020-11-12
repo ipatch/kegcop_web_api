@@ -13,25 +13,24 @@ gem 'paperclip', '~> 5.2.1' # managing file uploads
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7' # has_secure_password
 
-group :test do
+group :development :test do
   gem 'factory_girl', '~> 4.9.0'
   gem 'ffaker', '~> 2.10.0'
   gem 'rspec', '~> 3.8.0'
   gem 'shoulda-matchers', '~> 3.1.2'
   # gem 'ffaker', '~> 2.8', '>= 2.8.1'
+  gem 'pry', '~> 0.12.0', group: :development
+  # gem 'pry', '~> 0.11.3', group: :development
+  gem 'capistrano', '~> 3.12.0', '>= 3.12.0'
+  gem 'capistrano-rvm', '~> 0.1.2'
+  # gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
+  gem 'capistrano-rails', '~> 1.4'
+  gem 'capistrano-bundler', '~> 1.4'
+  gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
+  gem 'capistrano3-nginx', '~> 3.0.1'
 end
-
-# gem 'pry', '~> 0.11.3', group: :development
-gem 'pry', '~> 0.12.0', group: :development
-
-gem 'capistrano', '~> 3.12.0', '>= 3.12.0'
-gem 'capistrano-rvm', '~> 0.1.2'
-# gem 'capistrano-rails', '~> 1.3', '>= 1.3.1'
-gem 'capistrano-rails', '~> 1.4'
-gem 'capistrano-bundler', '~> 1.4'
-gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
-gem 'capistrano3-nginx', '~> 3.0.1'
 
 group :production do
   gem 'puma', '~> 3.12.4'
+  gem 'rails_12factor'
 end
