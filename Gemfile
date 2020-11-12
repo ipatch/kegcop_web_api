@@ -14,7 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7' # has_secure_password
 
 group :development, :test do
-  gem 'factory_girl', '~> 4.9.0'
+  # gem 'factory_girl', '~> 4.9.0'
   gem 'ffaker', '~> 2.10.0'
   gem 'rspec', '~> 3.8.0'
   gem 'shoulda-matchers', '~> 3.1.2'
@@ -28,9 +28,14 @@ group :development, :test do
   gem 'capistrano-bundler', '~> 1.4'
   gem 'capistrano3-puma', '~> 3.1', '>= 3.1.1'
   gem 'capistrano3-nginx', '~> 3.0.1'
+  gem "foreman", "~> 0.87.2"
+  gem "factory_bot", "~> 5.2"
 end
 
 group :production do
   gem 'puma', '~> 3.12.4'
-  gem 'rails_12factor'
+  gem "rails_12factor", "~> 0.0.3"
 end
+
+
+
