@@ -13,7 +13,7 @@ gem 'paperclip', '~> 5.2.1' # managing file uploads
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7' # has_secure_password
 
-group :development :test do
+group :development, :test do
   gem 'factory_girl', '~> 4.9.0'
   gem 'ffaker', '~> 2.10.0'
   gem 'rspec', '~> 3.8.0'
