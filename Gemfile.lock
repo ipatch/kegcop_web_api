@@ -191,6 +191,7 @@ DEPENDENCIES
   pg (~> 0.21.0)
   pry (~> 0.13.1)
   puma (~> 5.0.4)
+  rack (~> 1.6)
   rails (~> 4.2.11.3)
   rails_12factor (~> 0.0.3)
   responders (~> 2.4)
