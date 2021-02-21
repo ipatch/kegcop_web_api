@@ -2,7 +2,6 @@
 
 > A rails app powering ⚡️ the API portion of [kegcop.chrisrjones.com](http://kegcop.chrisrjones.com)
 
-
 ## Stack
 
 <a id="stack"></a>
@@ -11,7 +10,6 @@
 - Ngnix 1.10.3
 - Puma 3.12.4
 - JS Runtime: Node.js (V8)
-
 
 ## Deployment
 
